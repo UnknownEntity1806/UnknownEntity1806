@@ -1,25 +1,75 @@
-
-html{
-    background-color: rgb(205, 230, 221);
+/* Website boxes follow */
+/* all content is contained within full_page */
+#full_page {
+  background-color: white;
+  position: relative;
+  padding: 10px;
+  margin: 10%;
+  margin-top: 2%;
+  border-radius: 30px;
 }
 
-body{
-    text-align: center;
-    font-family:Quantico, sans-serif
+.header {
+  background-color: rgb(236, 236, 236);
+  border: 10px solid #a184af;
+  border-radius: 20px;
+  padding-bottom: 20px;
+}
+.box {
+  width: 50%;
+  position: relative;
+  left: 25%;
+  color: grey;
+}
+#navigation-container {
+  background-color: #e0ebe3;
+  width: 50%;
+  position: relative;
+  left: 25%;
+  padding-top: 0;
+  padding-bottom: 10px;
+  border: px solid #b45b8d;
+  border-radius: 10px;
+}
 
+.navigation-bar {
+  background-color: rgb(236, 236, 236);
+  border: 2px solid #a184af;
+  border-radius: 10px;
+  margin: 0px;
+  color: #a184af;
+}
+.navigation-content {
+  padding: 0px;
+  position: relative;
+  left: 25%;
+  margin: 10px;
+  width: 100px;
+  color: #b45b8d;
+}
+
+.footer {
+  padding-top: 60px;
+}
+
+/* Here is general code for elements*/
+body {
+  text-align: center;
+  font-family: Quantico, sans-serif;
+  background-color: #cbe1d2;
+  background-image: url(./assets/images/background_cityscape.webp);
+  background-attachment: fixed;
+  background-size: cover;
 }
 
 h1 {
-    color:rgb(182, 106, 169);
+  color: #a184af;
 }
-#subtitle{
-  font-weight:bolder;  
-}
-
-p{
-    color:grey;
+#subtitle {
+  font-weight: bolder;
+  color: #b45b8d;
 }
 
 small {
-    color:rgb(182, 106, 169);
+  color: rgb(182, 106, 169);
 }
