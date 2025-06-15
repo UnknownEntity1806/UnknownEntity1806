@@ -5,4 +5,5 @@
 <br> <b>Currently levelling up:</b> <br>
 <ul> 
   <li>HTML</li>
+  <li>CSS</li>
 </ul>
