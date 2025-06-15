@@ -1,78 +1,219 @@
 <!DOCTYPE html>
-<!-- TODO 1: basic CSS -->
-
-<html lang="en">
+<html>
   <head>
     <meta charset="UTF-8" />
-    <title>Unknown Entity 1806</title>
-    <link rel="stylesheet" href="./style.css" />
-
+    <title>Hello World_</title>
     <style>
-      .quantico-regular {
-        font-family: "Quantico", sans-serif;
+      .silkscreen-regular {
+        font-family: "Silkscreen", sans-serif;
         font-weight: 400;
         font-style: normal;
       }
 
-      .quantico-bold {
-        font-family: "Quantico", sans-serif;
+      .silkscreen-bold {
+        font-family: "Silkscreen", sans-serif;
         font-weight: 700;
         font-style: normal;
       }
 
-      .quantico-regular-italic {
-        font-family: "Quantico", sans-serif;
+      .vt323-regular {
+        font-family: "VT323", monospace;
         font-weight: 400;
-        font-style: italic;
+        font-style: normal;
       }
 
-      .quantico-bold-italic {
-        font-family: "Quantico", sans-serif;
-        font-weight: 700;
-        font-style: italic;
+      body {
+        text-align: center;
+        font-family: Quantico, sans-serif;
+        background-color: #cbe1d2;
+        background-image: url(./assets/images/background_cityscape.webp);
+        background-attachment: fixed;
+        background-size: cover;
+      }
+      .plain{
+        text-decoration: none;
+      }
+
+      .glowtext {
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: #3aff8b;
+        -webkit-text-stroke-width: 1px;
+        -webkit-text-stroke-color: #3e6653;
+        -webkit-animation: glow 2s linear infinite;
+        animation: glow 2s linear infinite;
+        font-size: 3rem;
+        font-weight: bold;
+      }
+
+      @keyframes glow {
+        0% {
+          text-shadow: 0 0 15px rgb(83, 255, 189);
+        }
+        50% {
+          text-shadow: none;
+        }
+        100% {
+          text-shadow: 0 0 15px rgb(49, 92, 72);
+        }
+      }
+
+      @-webkit-keyframes glow {
+        0% {
+          text-shadow: 0 0 15px rgb(115, 231, 196);
+        }
+        50% {
+          text-shadow: none;
+        }
+        100% {
+          text-shadow: 0 0 15px (83, 255, 189);
+        }
+      }
+
+      .landing {
+        position: relative;
+      }
+      .header {
+        padding-top: 10%;
+      }
+      .header-left {
+        display: inline-block;
+      }
+      .header-right {
+        display: inline-block;
+      }
+      .welcome {
+        padding-top: 5%;
+        padding-bottom: 5%;
+        padding-left: 15%;
+        padding-right: 15%;
+      }
+      .window {
+        background-color: #663389;
+        border: 3px solid #663389;
+        border-radius: 10px;
+        min-width: 800px;
+        max-width: 900px;
+      }
+      .window-header {
+        background-color: #aaa0a3;
+        display: flex;
+        height: 20px;
+        color: #663389;
+        text-align: left;
+        border-bottom: 3px solid #663389;
+        border-radius: 10px;
+        padding: 1%;
+      }
+      .window-header-text {
+        display: 2;
+        margin: 0px;
+        margin-right: 50%;
+        position: relative;
+        font-family: Silkscreen, monospace;
+      }
+      .boxes {
+        display: 0.5;
+        position: relative;
+        margin-right: 0%;
+        margin-left: 15%;
+      }
+      .window-box1 {
+        background-color: #6fb88d;
+        width: 15px;
+        height: 15px;
+        display: inline-block;
+        border: 2px solid #663389;
+        border-radius: 5px;
+      }
+      .window-box2 {
+        background-color: #a697bf;
+        width: 15px;
+        height: 15px;
+        display: inline-block;
+        border: 2px solid #663389;
+        border-radius: 5px;
+      }
+      .window-box3 {
+        background-color: #b45b8d;
+        width: 15px;
+        height: 15px;
+        display: inline-block;
+        border: 2px solid #663389;
+        border-radius: 5px;
+      }
+      .window-content {
+        background-color: #685476;
+        color: #3aff8b;
+        padding: 30px;
+        border-radius: 10px;
+        font-family: VT323, monospace;
+      }
+
+      footer {
+        position:relative;
+        left: 15%;
+        max-width: 600px;
+        background-color: #3aff8b;
+        border-radius: 50%;
+        font-family: "VT323", monospace;
+        color: #663389;
       }
     </style>
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
-      href="https://fonts.googleapis.com/css2?family=Quantico:ital,wght@0,400;0,700;1,400;1,700&display=swap"
+      href="https://fonts.googleapis.com/css2?family=Silkscreen:wght@400;700&family=VT323&display=swap"
       rel="stylesheet"
     />
   </head>
-
   <body>
-    <div id="full_page">
+    <div class="landing">
       <div class="header">
-        <h1>Unknown Entity 1806</h1>
-
-        <img
-          src=".\assets\images\head only.webp"
-          width="200"
-          alt="Logo of UnknownEntity1806"
-        />
-        <p id="subtitle">
-          Hello and welcome to my little corner on the internet.
-        </p>
+        <div class="header-left">
+          <img
+            title="Hello world_"
+            src="./assets/video/desktop.webp"
+            alt="Animation of desktop with text Hello World"
+            height="400px"
+          />
+        </div>
+        <div class="header-right">
+          <img
+            title="Little Entity waves and says *hello* "
+            src="./assets/video/wave_small.webp"
+            alt="animation of UnknownEntity1806 waving"
+            height="200px"
+          />
+        </div>
       </div>
-      <div class="box">
-        <p>
-          This is a space to share my illustration and coding projects. And just
-          about anything I wish to put out there.
-        </p>
-        <p>
-          This page originated from my desire to recreate the old-style webpages
-          as seen on Geocities, although I myself had a page on MSN Groups. I am
-          currently learning basic Front End coding, and will adjust this site
-          as I learn more things.
-        </p>
-        <p>
+      <div class="welcome">
+        <div class="window">
+          <div class="window-header">
+            <p class="window-header-text">disclaimer .exe</p>
+            <div class="boxes">
+              <div class="window-box1"></div>
+              <div class="window-box2"></div>
+              <div class="window-box3"></div>
+            </div>
+          </div>
+          <div class="window-content">
+            <p class="welcome_message">
+              Hello and welcome to my little corner on the internet. Please be
+              aware that this website is optimalised for viewing on a desktop.
+              All images are designed by me, unless stated otherwise. As such, they are copyrighted. I have a
+              special space for freebies you can use as long as you link back to my website. Feel free to explore. As I
+              am currently studying Frontend Development, I will update this
+              site as I learn.
+            </p>
+            <a href=".\public\main.html" class="plain"> <p class="Enter glowtext">> Enter_ </p></a>
+            <p>
           Link back to my page:
           <a
             target="_blank"
             href="https://unknownentity1806.github.io/UnknownEntity1806/"
             title="Unknown Entity 1806"
             ><img
-              src="assets\images\button02.webp"
+              src=".\assets\images\button02.webp"
               alt="button for Unknown Entity 1806"
               width="88"
               height="31"
@@ -83,7 +224,7 @@
               href="https://unknownentity1806.github.io/UnknownEntity1806/"
               title="Unknown Entity 1806"
               ><img
-                src="assets\images\button03.webp"
+                src=".\assets\images\button03.webp"
                 alt="button for Unknown Entity 1806"
                 width="88"
                 height="31"
@@ -94,33 +235,24 @@
  <a target="_blank"  href="https://unknownentity1806.github.io/UnknownEntity1806/" title="Unknown Entity 1806"><img src="https://unknownentity1806.github.io/UnknownEntity1806/assets/images/button03.webp" alt="button for Unknown Entity 1806" width="88" height="31"/></a> </textarea
           >
         </p>
-        <div id="navigation-container">
-          <div class="navigation-bar">
-            <h2>Navigation</h2>
           </div>
-          <div class="navigation-content">
-            <ul>
-              <li><a href="public/bookmark.html">Bookmarks</a></li>
-            </ul>
-          </div>
-        </div>
+        </div >
+        <footer>
+          <small
+            >[c] 2025. Everything human-made by webmaster Malou a.k.a.
+            UnknownEntity1806.</small
+          >
+        </footer>
       </div>
-      <footer>
-        <div class="footer">
-          <hr />
-          <small>
-            [c] 2025. Everything human-made by webmaster Malou a.k.a.
-            UnknownEntity1806.
-          </small>
-          <br />
-          <img
-            width="200"
-            height="100"
-            src="./assets\video\Walking cycle ONLY.gif"
-            alt="Walking UnknownEntity1806 animation"
-          />
-        </div>
-      </footer>
     </div>
   </body>
 </html>
+
+<!-- To Do: 
+
+
+
+  
+    5. Make ENTER glow and maybe animate the underscore _ 
+    6. Fix overall position of the window in relation to the header images
+    -->
