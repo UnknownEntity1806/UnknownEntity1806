@@ -50,7 +50,7 @@ body {
   font-family: "Nunito", sans-serif;
   margin: 0;
   background-color: #cbe1d2;
-  background-image: url(../assets/images/background\ cityscape.webp);
+  background-image: url(../assets/images/background_cityscape.png);
   background-attachment: fixed;
   background-size: cover;
 }
@@ -96,7 +96,7 @@ body {
   /* this is only for a background image! */
   /* if you want to put images IN the header, 
       you can add them directly to the <div id="header"></div> element! */
-  background-image: url(../assets/images/header.webp);
+  background-image: url(../assets/images/header.png);
   background-size: 100%;
 }
 
