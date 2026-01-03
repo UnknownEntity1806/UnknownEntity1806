@@ -279,7 +279,7 @@ aside{
 }
 
 .walking {
-  margin-top: 90%;
+  margin-top: 5%;
 }
 
 /* BELOW THIS POINT IS MEDIA QUERY */
@@ -305,11 +305,11 @@ aside{
       feel free to play around with the order!
       */
   main {
-    order: 1;
+    order: 2;
   }
 
   #leftSidebar {
-    order: 2;
+    order: 1;
   }
 
   #rightSidebar {

@@ -1,0 +1,228 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Pixelify+Sans:wght@400..700&family=Silkscreen:wght@400;700&family=VT323&display=swap"
+      rel="stylesheet"
+    />
+    <title>Unknown Entity 1806</title>
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+
+      body {
+        background-image: url("/assets/images/background_cityscape.png");
+        background-size: cover;
+        background-attachment: fixed;
+        font-family: Arial, sans-serif;
+      }
+
+      header {
+        background-position: center;
+        background-repeat: no-repeat;
+        max-width: 1200px;
+        margin: 40px auto;
+        padding: 0px;
+      }
+
+      .container {
+        max-width: 1200px;
+        margin: 40px auto;
+        padding: 20px;
+        background-color: rgba(255, 255, 255, 1);
+        border-radius: 20px;
+      }
+
+      .gallery {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+        gap: 20px;
+      }
+
+      .thumbnail {
+        cursor: pointer;
+        overflow: hidden;
+        border-radius: 8px;
+        transition: transform 0.3s ease;
+      }
+
+      .thumbnail:hover {
+        transform: scale(1.05);
+      }
+
+      .thumbnail img {
+        width: 100%;
+        height: 150px;
+        object-fit: cover;
+        display: block;
+      }
+
+      .modal {
+        display: none;
+        position: fixed;
+        z-index: 1000;
+        left: 0;
+        top: 0;
+        width: 100%;
+        height: 100%;
+        background-color: rgba(0, 0, 0, 0.8);
+      }
+
+      .modal.active {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+      }
+
+      .modal-content {
+        position: relative;
+        max-width: 80%;
+        max-height: 80%;
+      }
+
+      .modal-content img {
+        width: 100%;
+        height: auto;
+        border-radius: 8px;
+      }
+
+      .close {
+        position: absolute;
+        top: 20px;
+        right: 40px;
+        font-size: 32px;
+        font-weight: bold;
+        color: white;
+        cursor: pointer;
+      }
+
+      .close:hover {
+        color: #ccc;
+      }
+      #navbar {
+        max-width: 1200px;
+        margin: 10px auto;
+        padding: 10px;
+        text-align: center;
+        background-color: #26e68c;
+      }
+      #navbar a {
+        margin: 0 15px;
+        text-decoration: none;
+        color: #d15493;
+        font-weight: bold;
+      }
+      #navbar a:hover {
+        text-decoration: underline;
+        color: #6f5686;
+      }
+      .header p {
+        text-align: center;
+        font-size: 24px;
+        font-weight: bold;
+        color: #ffffff;
+        text-shadow: 2px 2px 4px #6f5686;
+        background-color: #26e68c;
+      }
+      #footer {
+        max-width: fit-content;
+
+        margin: 40px auto;
+        padding: 20px;
+        border-radius: 50px;
+        text-align: center;
+        color: white;
+        background-color: #6f5686;
+      }
+      .portfolio-description {
+        text-align: center;
+        margin-bottom: 20px;
+        font-family: "Pixelify Sans", sans-serif;
+        a {
+          text-decoration: none;
+          color: #d15493;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <header class="header">
+      <img src="/assets/images/header.png" alt="Header Image" />
+      <nav id="navbar" style="margin-bottom: 10px">
+        <span><a href="../main.html">Home</a> </span>
+        <span><a href="../About.html">About</a></span>
+        <span><a href="../Portfolio.html">Portfolio</a></span>
+        <span><a href="../For_you.html">For you</a></span>
+        <span><a href="../shrines.html">Shrines</a></span>
+      </nav>
+      <p>PORTFOLIO :: UNKNOWN ENTITY 1806</p>
+    </header>
+
+    <div class="container">
+      <p class="portfolio-description">
+        These are some illustrations featuring my persona Unknown Entity 1806.<br>
+        If you would like to know more about this character, you can go
+        <a href="../unknownentity1806.html">here</a>
+      </p>
+      <div class="gallery" id="gallery">
+        <!-- Add your image thumbnails here -->
+        <div class="thumbnail">
+          <img
+            src="https://file.garden/aE7eugw0EBvaQzOF/assets/portfolio/profile%20pic.png"
+            alt="Entity 1806 - Profile Picture"
+            title="Testing 1"
+          />
+        </div>
+        <div class="thumbnail">
+          <img
+            src="https://file.garden/aE7eugw0EBvaQzOF/assets/portfolio/rotating%20head%20an.png"
+            alt="Image 2"
+          />
+        </div>
+      </div>
+    </div>
+
+    <div class="modal" id="modal">
+      <span class="close">&times;</span>
+      <div class="modal-content">
+        <img id="modalImage" src="" alt="" />
+      </div>
+    </div>
+    <footer>
+      <div id="footer">
+        <p>&copy; 2026 Unknown Entity 1806. All rights reserved.</p>
+      </div>
+    </footer>
+
+    <script>
+      const thumbnails = document.querySelectorAll(".thumbnail img");
+      const modal = document.getElementById("modal");
+      const modalImage = document.getElementById("modalImage");
+      const closeBtn = document.querySelector(".close");
+
+      thumbnails.forEach((img) => {
+        img.addEventListener("click", () => {
+          modal.classList.add("active");
+          modalImage.src = img.src;
+        });
+      });
+
+      closeBtn.addEventListener("click", () => {
+        modal.classList.remove("active");
+      });
+
+      modal.addEventListener("click", (e) => {
+        if (e.target === modal) {
+          modal.classList.remove("active");
+        }
+      });
+    </script>
+  </body>
+</html>
