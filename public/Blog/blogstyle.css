@@ -55,7 +55,7 @@
   font-weight: 100;
   font-style: normal;
 }
- .silkscreen-regular {
+.silkscreen-regular {
   font-family: "Silkscreen", sans-serif;
   font-weight: 200;
   font-style: normal;
@@ -159,7 +159,7 @@ body {
   padding-top: 10px;
 }
 
- #navbar li {
+#navbar li {
   padding-top: 10px;
 }
 
@@ -182,8 +182,6 @@ body {
   display: flex;
 }
 
-
-
 /* this is the color of the main content area */
 main {
   background-color: #fffefe;
@@ -199,7 +197,6 @@ main {
     tells the CSS the order in which to display them.
     left sidebar is 1, content is 2, and right sidebar is 3! */
 
-
 footer {
   background-color: #c99fca;
   width: 100%;
@@ -210,7 +207,7 @@ footer {
   border-radius: 5px;
 }
 
-h1, 
+h1,
 h2,
 h3 {
   color: #0dd387;
@@ -219,38 +216,39 @@ h3 {
 h1 {
   font-size: 25px;
 }
-.post-title {
-  color:#d15493;
-  font-family:"silkscreen", sans-serif;
+.blog-container {
+  margin: auto;
+  max-width: 1000px;
+  padding: 20px;
+  flex: auto;
 }
-.post-meta{
+.post-title {
+  color: #d15493;
+  font-family: "silkscreen", sans-serif;
+}
+.post-meta {
   font-family: "Pixelify Sans", sans-serif;
 }
-.author{
-  color:#610d5d
+.author {
+  color: #610d5d;
 }
-.date{
-  color:#aaa6a8
+.date {
+  color: #aaa6a8;
 }
-.post-content{
+.post-content {
   width: 500px;
   text-align: justify;
-;
-  
 }
-.blog-footer{
+.blog-footer {
   font-family: "VT323", monospace;
-  color:#43256e
-;
-padding-bottom: 100px;
+  color: #43256e;
+  padding-bottom: 100px;
 }
 
 strong {
   /* this styles bold text */
- color: #9a3fac;
+  color: #9a3fac;
 }
-
-
 
 /* BELOW THIS POINT IS MEDIA QUERY */
 
@@ -265,7 +263,13 @@ strong {
   #flex {
     flex-wrap: wrap;
   }
-
+  .post-content{
+    width:100%;
+  }
+iframe{
+  max-width:100%;
+  height:auto;
+}
   aside {
     width: 100%;
   }
@@ -277,10 +281,8 @@ strong {
   main {
     order: 1;
   }
+}
 
-  }
-
-  #navbar ul {
-    flex-wrap: wrap;
-  }
-
+#navbar ul {
+  flex-wrap: wrap;
+}
