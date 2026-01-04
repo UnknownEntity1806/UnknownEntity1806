@@ -154,7 +154,7 @@ aside {
     between the sidebars! */
 main {
   background-color: #fffefe;
-  flex: 1;
+  flex: 2;
   padding: 20px;
   order: 2;
   border-radius: 5px;
