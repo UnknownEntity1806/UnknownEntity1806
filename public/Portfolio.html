@@ -50,11 +50,55 @@
                 
                 <main>
                     <h1>Portfolio</h1>
-                    <p><strong>to be updated ...</strong></p>
-                    <p> Will have subpages for the different collections.</p>
+                    <p><strong>Here is an overview of my illustrations made from 2024-2026</strong></p>
+              
                     
-          
+          <div class="portfolio-links">
+            <ul>
+              <li><a href="./Portfolio/walkintheforest.html">A Walk in the Forest</a></li>
+              <li><a href="./Portfolio/unknownentity.html">Unknown Entity 1806</a></li>
+              <li><a href="./Portfolio/Cloudyday.html">Cloudy Day</a></li>
+            </ul>
+          </div>
+<div class="container">
+      <p class="portfolio-description">
+        These are some miscellaneous illustrations that do not belong to a specific collection.
+        <br />
+        <small>*** hover over an image for a description ***</small>
+      </p>
+      <div class="gallery" id="gallery">
+        <!-- Add your image thumbnails here -->
+        <div class="thumbnail">
+          <img
+            src="https://file.garden/aE7eugw0EBvaQzOF/assets/portfolio/mermaids%20complete%20small.png"
+            alt="Mermay 2025"
+            title="Mermay 2025"
+          />
+        </div>
+        <div class="thumbnail">
+          <img
+            src="https://file.garden/aE7eugw0EBvaQzOF/assets/portfolio/Zarathiel%20-%20monk%202.png"
+            alt="Zarathiel - Monk"
+            title="Zarathiel - Monk. A character from a DnD campaign I briefly joined"
+          />
+        </div>
+        <div class="thumbnail">
+          <img
+            src="https://file.garden/aE7eugw0EBvaQzOF/assets/portfolio/Meettheartist24.png"
+            alt="Meet the artist 24"
+            title="Illustration made for Meet the Artist 2024 event"
+          />
+        </div>
+        
+      </div>
+    </div>
 
+    <div class="modal" id="modal">
+      <span class="close">&times;</span>
+      <div class="modal-content">
+        <img id="modalImage" src="" alt="" />
+      </div>
+    </div>
                 </main>
                 
                 
@@ -118,7 +162,30 @@
           </div>
             <footer id="footer" style="margin-top: 10px;">&copy; 2025-2026. Webmaster Malou a.k.a. UnknownEntity1806</footer>
         </div>
-        
+      <script>
+      const thumbnails = document.querySelectorAll(".thumbnail img");
+      const modal = document.getElementById("modal");
+      const modalImage = document.getElementById("modalImage");
+      const closeBtn = document.querySelector(".close");
+
+      thumbnails.forEach((img) => {
+        img.addEventListener("click", () => {
+          modal.classList.add("active");
+          modalImage.src = img.src;
+          modalImage.title = img.title;
+        });
+      });
+
+      closeBtn.addEventListener("click", () => {
+        modal.classList.remove("active");
+      });
+
+      modal.addEventListener("click", (e) => {
+        if (e.target === modal) {
+          modal.classList.remove("active");
+        }
+      });
+    </script>   
     
 </body>
 </html>
