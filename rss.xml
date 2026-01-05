@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+    <channel>
+        <title>Unknown Entity 1806</title>
+        <description>
+           My little corner of the internet. Sharing my art and thoughts.
+        </description>
+        <link>https://www.unknownentity1806.page/rss.xml</link>
+        <atom:link
+            href="https://www.unknownentity1806.page/rss.xml"
+            rel="self"
+            type="application/rss+xml"
+        />
+        <ttl>1440</ttl>
+        <webMaster>webmaster@unknownentity1806.page</webMaster>
+        <lastBuildDate>
+            Sun, 04 Jan 2026 18:44:00 +0100
+        </lastBuildDate>
+        <language>en-us</language>
+
+  <!--
+  Place your feed items here.
+  -->
+<item>
+    <guid>https://unknownentity1806.page/public/Blog/2026-01.html</guid>
+    <title>Hello World, Hello 2026!</title>
+    <description>
+       It is 2026, and this is my first blogpost! So stoked for it. I wanted to share a video I made for my old YT channel.
+    </description>
+    <link>https://unknownentity1806.page/public/Blog/2026-01.html</link>
+    <pubDate>
+        Thu, 01 Jan 2026 17:49:35 +0100
+    </pubDate>
+</item>
+
+
+    </channel>
+</rss>

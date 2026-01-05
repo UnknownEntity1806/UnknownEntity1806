@@ -79,6 +79,7 @@
         display: flex;
         align-items: center;
         justify-content: center;
+        overflow: scroll
       }
 
       .modal-content {
@@ -88,9 +89,10 @@
       }
 
       .modal-content img {
-        width: 100%;
+        width: 800px;
         height: auto;
         border-radius: 8px;
+  
       }
 
       .close {
@@ -149,6 +151,9 @@
           text-decoration: none;
           color: #d15493;
         }
+        small {
+          color: #908787;
+        }
       }
     </style>
   </head>
@@ -167,9 +172,12 @@
 
     <div class="container">
       <p class="portfolio-description">
-        These are some illustrations featuring my persona Unknown Entity 1806.<br>
+        These are some illustrations featuring my persona Unknown Entity
+        1806.<br />
         If you would like to know more about this character, you can go
         <a href="../unknownentity1806.html">here</a>
+        <br />
+        <small>*** hover over an image for a description ***</small>
       </p>
       <div class="gallery" id="gallery">
         <!-- Add your image thumbnails here -->
@@ -177,13 +185,28 @@
           <img
             src="https://file.garden/aE7eugw0EBvaQzOF/assets/portfolio/profile%20pic.png"
             alt="Entity 1806 - Profile Picture"
-            title="Testing 1"
+            title="Entity 1806 - Profile Picture"
           />
         </div>
         <div class="thumbnail">
           <img
             src="https://file.garden/aE7eugw0EBvaQzOF/assets/portfolio/rotating%20head%20an.png"
-            alt="Image 2"
+            alt="Entity 1806 - Rotating Head"
+            title="Entity 1806 - Rotating Head"
+          />
+        </div>
+        <div class="thumbnail">
+          <img
+            src="https://file.garden/aE7eugw0EBvaQzOF/assets/portfolio/chibi_entity2.png"
+            alt="Entity 1806 - Sad"
+            title="Entity 1806 - Sad"
+          />
+        </div>
+        <div class="thumbnail">
+          <img
+            src="https://file.garden/aE7eugw0EBvaQzOF/assets/portfolio/chibi_entity1a.png"
+            alt="Entity 1806 - Happy"
+            title="Entity 1806 - Happy"
           />
         </div>
       </div>
@@ -197,7 +220,7 @@
     </div>
     <footer>
       <div id="footer">
-        <p>&copy; 2026 Unknown Entity 1806. All rights reserved.</p>
+        <p>&copy; 2025-2026 Unknown Entity 1806. All rights reserved.</p>
       </div>
     </footer>
 
@@ -211,6 +234,7 @@
         img.addEventListener("click", () => {
           modal.classList.add("active");
           modalImage.src = img.src;
+          modalImage.title = img.title;
         });
       });
 

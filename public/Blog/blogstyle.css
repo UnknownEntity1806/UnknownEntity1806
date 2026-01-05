@@ -205,8 +205,12 @@ footer {
   color: #610d5d;
   text-align: center;
   border-radius: 5px;
+  font-size: smaller;
+  font-family: "Pixelify Sans", sans-serif;
 }
-
+.Pixelify {
+  font-family: "Pixelify Sans", sans-serif;
+}
 h1,
 h2,
 h3 {
