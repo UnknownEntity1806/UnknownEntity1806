@@ -282,6 +282,57 @@ aside{
   margin-top: 5%;
 }
 
+.buttons-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(88px, 1fr));
+            gap: 15px;
+            margin-top: 20px;
+        }
+        
+        .button-item {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+        
+        .button-item img {
+            width: 88px;
+            height: 31px;
+          }
+/* Style the buttons that are used to open and close the accordion panel */
+.accordion {
+  color: #a41bac;
+  cursor: pointer;
+  padding: 18px;
+  margin-bottom: 10px;;
+  width: 100%;
+  text-align: left;
+  border: none;
+  outline: none;
+  transition: 0.4s;
+  background-color: #d9ced6;
+  border-radius: 10px;
+}
+
+/* Add a background color to the button if it is clicked on (add the .active class with JS), and when you move the mouse over it (hover) */
+.active, .accordion:hover {
+  background-color: #3aff8b;
+}
+
+/* Style the accordion panel. Note: hidden by default */
+.panel {
+  padding: 0 18px;
+  background-color: white;
+  display: none;
+  overflow: hidden;
+  margin-bottom: 10px;
+}
+
+.pixelly {
+  font-family: "Silkscreen", monospace;
+  font-size: smaller;
+}
+
 /* BELOW THIS POINT IS MEDIA QUERY */
 
 /* so you wanna change the width of your page? 
