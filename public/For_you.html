@@ -55,12 +55,6 @@
       <div id="flex">
         <main>
           <h1>For you</h1>
-          <p><strong>to be updated ...</strong></p>
-          <p>Will have some nice freebies you can use.</p>
-          <a href="../public/bookmarks.html"><img
-            src="https://file.garden/aE7eugw0EBvaQzOF/assets/bookmarkbanner.png"
-            width="300px" /> </a>
-          <br>
           <p><strong>> terms of use _</strong></p>
           <p>
             All the things I share through this page are made by me. If you use
@@ -68,6 +62,34 @@
             using one of my buttons linking back to my page, or just mention a
             link back to this page.
           </p>
+          <br />
+          <button class="accordion"><img src="https://file.garden/aE7eugw0EBvaQzOF/assets/banner-buttons.png" width="300px" ></button>
+<div class="panel">
+  <p class="pixelly">An overview of 88x31 buttons I made you can use on your own website. I encourage you to self-host the images instead of hotlinking in case my links break in the future.</p>
+  <div class="buttons-grid">
+    <div class="button-item">
+      <img src="https://file.garden/aE7eugw0EBvaQzOF/assets/buttons/digitalartist.gif" alt="Button 88x31 for digital artists made by UnknownEntity1806" title="I am a digital artist"/>
+    </div>
+    <div class="button-item">
+      <img src="https://file.garden/aE7eugw0EBvaQzOF/assets/buttons/loyalhufflepuff.gif" alt="Button 88x31 for loyal Hufflepuffs made by UnknownEntity1806" title="I am a loyal Hufflepuff"/>
+    </div>
+    <div class="button-item">
+      <img src="https://file.garden/aE7eugw0EBvaQzOF/assets/buttons/disneyprincess.png" alt="Button 88x31 for Disney princesses made by UnknownEntity1806" title="I am a Disney princess"/>
+    </div>
+
+  </div>
+</div>
+
+<button class="accordion"><img
+            src="https://file.garden/aE7eugw0EBvaQzOF/assets/bookmarkbanner.png"
+            width="300px" /></button>
+<div class="panel">
+  <p>
+    <a href="../public/bookmarks.html">Go to this page </a>
+  </p>
+</div>
+
+          
         </main>
 
         <!-- This is the submenu sidebar.-->
@@ -150,5 +172,23 @@
         &copy; 2025-2026. Webmaster Malou a.k.a. UnknownEntity1806. <a href="https://unknownentity1806.page/rss.xml"><img src="/assets/images/rss.svg" width=15px alt="RSS icon" /></a> 
       </footer>
     </div>
+    <script>var acc = document.getElementsByClassName("accordion");
+var i;
+
+for (i = 0; i < acc.length; i++) {
+  acc[i].addEventListener("click", function() {
+    /* Toggle between adding and removing the "active" class,
+    to highlight the button that controls the panel */
+    this.classList.toggle("active");
+
+    /* Toggle between hiding and showing the active panel */
+    var panel = this.nextElementSibling;
+    if (panel.style.display === "block") {
+      panel.style.display = "none";
+    } else {
+      panel.style.display = "block";
+    }
+  });
+}</script>
   </body>
 </html>
