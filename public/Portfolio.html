@@ -22,18 +22,7 @@
         font-weight: 400;
         font-style: normal;
       }
-.portfolio-links ul {
-  list-style-type: none;
-  padding: 0;
-  margin: 0;
-  li{
-    margin-bottom: 10px;
-    background-color: #64f5c5;
-    padding: 10px;
-    border-radius: 20px;
-    width: fit-content;
-  }
-}
+
 
       .container {
         max-width: 1200px;
@@ -41,6 +30,7 @@
         padding: 20px;
         background-color: rgba(255, 255, 255, 1);
         border-radius: 20px;
+        float: left;
       }
 
       .gallery {
@@ -112,6 +102,43 @@
         color: #ccc;
       }
 
+      /* Container needed to position the button. Adjust the width as needed */
+.portfolio-links {
+  position: relative;
+  width: 40%;
+  float: left;
+  margin-left: 10px;
+}
+
+/* Make the image responsive */
+.portfolio-links img {
+  width: 100%;
+  height: 100px;
+  object-fit: cover;
+  border-radius: 20px;
+  ;
+}
+
+/* Style the button and place it in the middle of the container/image */
+.portfolio-links .btn {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  background-color: #685476;
+  color: white;
+  font-size: 16px;
+  padding: 12px 24px;
+  border: none;
+  cursor: pointer;
+  border-radius: 20px;
+}
+
+.portfolio-links .btn:hover {
+  background-color: rgb(0, 195, 159);
+}
+
 </style> 
 <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -140,15 +167,20 @@
                 <main>
                     <h1>Portfolio</h1>
                     <p><strong>Here is an overview of my illustrations made from 2024-2026</strong></p>
-              
-                    
-          <div class="portfolio-links">
-            <ul>
-              <li><a href="./Portfolio/walkintheforest.html">A Walk in the Forest</a></li>
-              <li><a href="./Portfolio/unknownentity.html">Unknown Entity 1806</a></li>
-              <li><a href="./Portfolio/Cloudyday.html">Cloudy Day</a></li>
-            </ul>
-          </div>
+                    <p class="pixelly">Disclaimer: as I cannot upload all my work up until now, this section will feature those illustrations i wish to showcase. Other illustrations and WIPs (Work In Progress) will be shared through the blog. </p>
+                    <div class="portfolio-links">
+                      <img src="https://file.garden/aE7eugw0EBvaQzOF/assets/portfolio/background%20ghibli%20style-NOBANSHEE-EDIT2023.png">
+                      <button class="btn"><a href="./Portfolio/walkintheforest.html"> A Walk in the Forest</a></button>
+                    </div>
+                    <div class="portfolio-links">
+                      <img src="https://file.garden/aE7eugw0EBvaQzOF/assets/portfolio/chibi_entity2.png">
+                      <button class="btn"><a href="./Portfolio/unknownentity.html">Unknown Entity 1806</a></button>
+                    </div>
+                    <div class="portfolio-links">
+                      <img src="https://file.garden/aE7eugw0EBvaQzOF/assets/portfolio/chibi%20cloudy%20angel.png">
+                      <button class="btn"><a href="./Portfolio/Cloudyday.html">Cloudy Day</a></button>
+                    </div>
+          </br>
 <div class="container">
       <p class="portfolio-description">
         These are some miscellaneous illustrations that do not belong to a specific collection.
