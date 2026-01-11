@@ -14,13 +14,24 @@
         <ttl>1440</ttl>
         <webMaster>webmaster@unknownentity1806.page</webMaster>
         <lastBuildDate>
-            Sun, 04 Jan 2026 18:44:00 +0100
+            Sun, 11 Jan 2026 10:54:00 +0100
         </lastBuildDate>
         <language>en-us</language>
 
   <!--
   Place your feed items here.
   -->
+<item>
+    <guid>https://unknownentity1806.page/public/Blog/w-i-p/january-01.html</guid>
+    <title>Works in Progress January</title>
+    <description>
+       A little bit of my works in progress in January. Some might be finished this month. Others are more ideas that are for further in the future.
+    </description>
+    <link>https://unknownentity1806.page/public/Blog/w-i-p/january-01.html</link>
+    <pubDate>
+        Sun, 11 Jan 2026 10:49:35 +0100
+    </pubDate>
+</item>
 <item>
     <guid>https://unknownentity1806.page/public/Blog/2026-01.html</guid>
     <title>Hello World, Hello 2026!</title>
