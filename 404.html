@@ -1,0 +1,251 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>404 - Page Not Found</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+        href="https://fonts.googleapis.com/css2?family=Silkscreen:wght@400;700&family=VT323&display=swap"
+        rel="stylesheet"
+    />
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: "VT323", monospace;
+            min-height: 100vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            background: linear-gradient(135deg, #6f5686 0%, #65409d 50%, #501984 100%);
+            background-attachment: fixed;
+            overflow: hidden;
+            color: #3aff8b;
+            text-shadow: 0 0 10px #3aff8b, 0 0 20px #ff006e;
+            position: relative;
+        }
+
+        /* Animated background glitch */
+        body::before {
+            content: "";
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: repeating-linear-gradient(
+                0deg,
+                rgba(58, 255, 139, 0.03) 0px,
+                rgba(58, 255, 139, 0.03) 1px,
+                transparent 1px,
+                transparent 2px
+            );
+            pointer-events: none;
+            z-index: 1;
+            animation: scan 8s linear infinite;
+        }
+
+        @keyframes scan {
+            0% {
+                transform: translateY(0);
+            }
+            100% {
+                transform: translateY(10px);
+            }
+        }
+
+        .container {
+            position: relative;
+            z-index: 2;
+            text-align: center;
+            padding: 2rem;
+            border: 3px solid #3aff8b;
+            background: rgba(45, 11, 95, 0.8);
+            border-radius: 5px;
+            box-shadow: 0 0 20px #3aff8b, 0 0 40px #ff006e, inset 0 0 20px rgba(58, 255, 139, 0.1);
+            max-width: 600px;
+            width: 90%;
+        }
+
+        .glitch-text {
+            font-family: "Silkscreen", sans-serif;
+            font-size: 4rem;
+            font-weight: 700;
+            margin-bottom: 1rem;
+            position: relative;
+            display: inline-block;
+            animation: glitch 0.3s infinite;
+        }
+
+        @keyframes glitch {
+            0% {
+                text-shadow: -2px 0 #ff006e, 2px 0 #00d9ff, 0 0 10px #3aff8b;
+            }
+            50% {
+                text-shadow: 2px 0 #ff006e, -2px 0 #00d9ff, 0 0 20px #3aff8b;
+            }
+            100% {
+                text-shadow: -2px 0 #ff006e, 2px 0 #00d9ff, 0 0 10px #3aff8b;
+            }
+        }
+
+        .error-code {
+            font-size: 5rem;
+            font-weight: 700;
+            margin: 1rem 0;
+            color: #ff006e;
+            font-family: "VT323", monospace;
+            text-shadow: 0 0 20px #ff006e, 0 0 40px #3aff8b;
+            animation: pulse 2s ease-in-out infinite;
+        }
+
+        @keyframes pulse {
+            0%, 100% {
+                opacity: 1;
+                transform: scale(1);
+            }
+            50% {
+                opacity: 0.8;
+                transform: scale(1.05);
+            }
+        }
+
+        .error-message {
+            font-size: 1.5rem;
+            margin: 1rem 0;
+            color: #3aff8b;
+            font-family: "VT323", monospace;
+        }
+
+
+        .message {
+            font-size: 1.2rem;
+            margin: 1.5rem 0;
+            line-height: 1.6;
+            color: #3aff8b;
+        }
+
+        .cta-buttons {
+            display: flex;
+            gap: 1rem;
+            margin-top: 2rem;
+            justify-content: center;
+            flex-wrap: wrap;
+        }
+
+        .btn {
+            padding: 0.8rem 1.5rem;
+            font-size: 1.1rem;
+            font-family: "VT323", monospace;
+            border: 2px solid #3aff8b;
+            background: rgba(58, 255, 139, 0.1);
+            color: #3aff8b;
+            text-decoration: none;
+            cursor: pointer;
+            transition: all 0.3s ease;
+            box-shadow: 0 0 10px #3aff8b;
+            border-radius: 3px;
+            text-shadow: 0 0 10px #3aff8b;
+        }
+
+        .btn:hover {
+            background: #3aff8b;
+            color: #1a0033;
+            box-shadow: 0 0 20px #3aff8b, 0 0 40px #ff006e;
+            transform: scale(1.05);
+            text-shadow: none;
+        }
+
+        .btn.secondary {
+            border-color: #ff006e;
+            color: #ff006e;
+            background: rgba(255, 0, 110, 0.1);
+            box-shadow: 0 0 10px #ff006e;
+        }
+
+        .btn.secondary:hover {
+            background: #ff006e;
+            color: #1a0033;
+            box-shadow: 0 0 20px #ff006e, 0 0 40px #3aff8b;
+        }
+
+        .status {
+            margin-top: 2rem;
+            padding-top: 2rem;
+            border-top: 2px dashed #3aff8b;
+            font-size: 0.9rem;
+            color: #ea37c4;
+            animation: blink 1s infinite;
+        }
+
+        @keyframes blink {
+            0%, 50% {
+                opacity: 1;
+            }
+            51%, 100% {
+                opacity: 0.5;
+            }
+        }
+
+        
+
+        @media (max-width: 600px) {
+            .error-code {
+                font-size: 3rem;
+            }
+
+            .glitch-text {
+                font-size: 2rem;
+            }
+
+            .error-message {
+                font-size: 1.2rem;
+            }
+
+            .cta-buttons {
+                flex-direction: column;
+            }
+
+            .btn {
+                width: 100%;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="corner-accent tl"></div>
+    <div class="corner-accent tr"></div>
+    <div class="corner-accent bl"></div>
+    <div class="corner-accent br"></div>
+
+    <div class="container">
+        <div class="error-code">404</div>
+        
+        <div class="glitch-text">LOST IN CYBERSPACE</div>
+
+        <div class="error-message">> ERROR: PAGE NOT FOUND _</div>
+
+        
+
+        <div class="message">
+            <p>the page you're looking for doesn't exist in this dimension...</p>
+            <p>maybe you took a wrong turn in the internet?</p>
+        </div>
+
+        <div class="cta-buttons">
+            <a href="index.html" class="btn">> HOME _</a>
+            <a href="javascript:history.back()" class="btn secondary">> BACK _</a>
+        </div>
+
+        <div class="status">
+            > system status: searching for reality... [████░░░░░] 40%
+        </div>
+    </div>
+</body>
+</html>
