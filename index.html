@@ -51,7 +51,7 @@
 
                 <li><a href="/index.html#link-changelog"> changelog </a></li>
                 <li>
-                  <a href="https://unknownentity1806.atabook.org/">
+                  <a href="/index.html#link-guestbook">
                     guestbook
                   </a>
                 </li>
@@ -75,7 +75,6 @@
             <li><a href="/public/gallery.html"> Art gallery</a></li>
             <li><a href="/public/shrines.html"> Shrines </a></li>
             <li><a href="/public/for-you.html"> Freebies for you </a></li>
-           
           </ul>
         </div>
       </nav>
@@ -119,7 +118,9 @@
           <div class="news-body">
             <!---all must be placed in the one p otherwise it will not be on one and the same line. -->
             <p>
-              <strong>25.01.2026 ::</strong> version 2.0 of the website is now online! Fully coded by me without a layout template! Will work on updating *FREEBIES* next.
+              <strong>25.01.2026 ::</strong> version 2.0 of the website is now
+              online! Fully coded by me without a layout template! Will work on
+              updating *FREEBIES* next.
             </p>
           </div>
         </div>
@@ -130,19 +131,16 @@
         <a class="btn" href="#link-changelog">see the changelog</a>
         <a
           class="btn"
-          href="https://unknownentity1806.atabook.org/"
-          target="_blank"
-          >sign my guestbook</a
-        >
+          href="#link-guestbook">sign my guestbook</a>
 
         <!--- NEIGHBORHOOD is only visible when clicked on link -->
         <div class="window" id="link-neighborhood">
           <p class="window-title">My neighborhood</p>
           <p>
-            These are some of my favourite websites that I visit regularly.
-            In no way do I expect recipocity. If you would like to be
-            added to my neighbourhood, please let me know via a  <a href="mailto:webmaster@unknownentity1806.page">message.</a>
-           
+            These are some of my favourite websites that I visit regularly. In
+            no way do I expect recipocity. If you would like to be added to my
+            neighbourhood, please let me know via a
+            <a href="mailto:webmaster@unknownentity1806.page">message.</a>
           </p>
           <div class="buttons-grid">
             <!-- 88x31px buttons go here -->
@@ -199,7 +197,6 @@
 
         <!--- END of neighborhood div-->
 
-        
         <!--- START of changelog, only visible when clicked upon -->
         <div class="changelog" id="link-changelog">
           <div class="changelog-title">
@@ -209,8 +206,17 @@
             <span class="title">title changelog</span> .txt
           </div>
           <div class="changelog-body">
-           <p>
-              <strong>25.01.2026 ::</strong> Added the *FREEBIES* page with 88x31 buttons and coloring pages. These categories will be expanded in time. 
+            <p>
+              <strong>26.01.2026 ::</strong> Changed the guestbook to an iframe on index.html. Changed .window in Freebies section to allow for more space with inline CSS. 
+            </p>
+            <p>
+              <strong>25.01.2026 ::</strong> Added the *FREEBIES* page with
+              88x31 buttons and coloring pages. These categories will be
+              expanded in time.
+            </p>
+            <p>
+              <strong>24.01.2026 ::</strong> CHANGE to version 2.0 of the
+              website. Missing pages: gallery, shrines, blog. Freebies next up.
             </p>
             <p>
               <strong>15.01.2026 ::</strong> completed the template with all
@@ -249,6 +255,22 @@
         </div>
         <!--- END of changelog -->
 
+        <!--- START of iframe section for guestbook-->
+        <iframe
+        id="link-guestbook"
+          src="https://unknownentity1806.atabook.org/"
+          title="Guestbook of Unknown Entity 1806"
+          width="100%"
+          height="500px"
+          style="
+            border: none;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            margin-top: 20px;
+          "
+        >
+        </iframe>
+        <!--- END of iframe section for guestbook-->
+
         <hr class="rounded" />
         <content>
           <article class="shadow small center">
@@ -261,8 +283,14 @@
               a good place to look. If you are just here for the cool freebies
               you can get, then go <a href="/public/for-you.html">here</a> . If
               you would like to be neighbours, send me a
-              <a href="mailto:webmaster@unknownentity1806.page">message</a>. Keep up with the latest updates by 
-              subscribing to my RSS feed <a href="/rss.xml">here</a>. <img src="https://unknownentity1806.page/assets/images/rss.svg" width="16px" alt="RSS feed icon" /> 
+              <a href="mailto:webmaster@unknownentity1806.page">message</a>.
+              Keep up with the latest updates by subscribing to my RSS feed
+              <a href="/rss.xml">here</a>.
+              <img
+                src="https://unknownentity1806.page/assets/images/rss.svg"
+                width="16px"
+                alt="RSS feed icon"
+              />
             </p>
           </article>
         </content>
