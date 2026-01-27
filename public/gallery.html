@@ -1,185 +1,241 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
+<!doctype html>
+<html>
+  <head>
     <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Under Construction</title>
+    <title>Welcome to Unknown Entity 1806´s page</title>
+    <style>
+      .silkscreen-regular {
+        font-family: "Silkscreen", sans-serif;
+        font-weight: 400;
+        font-style: normal;
+      }
+
+      .silkscreen-bold {
+        font-family: "Silkscreen", sans-serif;
+        font-weight: 700;
+        font-style: normal;
+      }
+
+      .vt323-regular {
+        font-family: "VT323", monospace;
+        font-weight: 400;
+        font-style: normal;
+      }
+    </style>
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
-        href="https://fonts.googleapis.com/css2?family=Silkscreen:wght@400;700&family=VT323&display=swap"
-        rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Silkscreen:wght@400;700&family=VT323&display=swap"
+      rel="stylesheet"
     />
-    <style>
-        * {
-            margin: 0;
-            padding: 0;
-            box-sizing: border-box;
-        }
-
-        body {
-            font-family: "VT323", monospace;
-            min-height: 100vh;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            background: url('https://file.garden/aE7eugw0EBvaQzOF/assets/background%20cityscape.webp') no-repeat center center fixed;
-            background-size: cover;
-            overflow: hidden;
-            color: #3aff8b;
-            text-shadow: 0 0 10px #3aff8b;
-            position: relative;
-        }
-
-        /* CRT scan line effect */
-        body::before {
-            content: "";
-            position: fixed;
-            top: 0;
-            left: 0;
-            width: 100%;
-            height: 100%;
-            background: repeating-linear-gradient(
-                0deg,
-                rgba(58, 255, 139, 0.03) 0px,
-                rgba(58, 255, 139, 0.03) 1px,
-                transparent 1px,
-                transparent 2px
-            );
-            pointer-events: none;
-            z-index: 1;
-            animation: scan 8s linear infinite;
-        }
-
-        @keyframes scan {
-            0% {
-                transform: translateY(0);
-            }
-            100% {
-                transform: translateY(10px);
-            }
-        }
-
-        .container {
-            position: relative;
-            z-index: 2;
-            text-align: center;
-            padding: 2rem;
-            border: 3px solid #3aff8b;
-            background: rgba(62, 37, 99, 0.65);
-            border-radius: 5px;
-            box-shadow: 0 0 20px #3aff8b, 0 0 40px #b45b8d, inset 0 0 20px rgba(58, 255, 139, 0.1);
-            max-width: 650px;
-            width: 90%;
-            overflow: auto;
-        }
-
-        .header-text {
-            font-family: "Silkscreen", sans-serif;
-            font-size: 2rem;
-            font-weight: 700;
-            margin-bottom: 1rem;
-            color: #663389;
-            text-shadow: 0 0 20px #ff006e, 0 0 40px #3aff8b;
-            animation: flicker 0.15s infinite;
-        }
-
-        @keyframes flicker {
-            0%, 19%, 21%, 23%, 25%, 54%, 56%, 100% {
-                text-shadow: 0 0 20px #b45b8d, 0 0 40px #3aff8b;
-            }
-            20%, 24%, 55% {
-                text-shadow: 0 0 10px #b45b8d, 0 0 20px #3aff8b;
-            }
-        }
-
-        .subtitle {
-            font-size: 1.5rem;
-            margin: 1.5rem 0;
-            color: #663389;
-            text-shadow: 0 0 10px #3aff8b
-        }
-
-        .home-link {
-            margin-top: 2rem;
-            padding-top: 1rem;
-            border-top: 2px dashed #3aff8b;
-        }
-
-        .btn {
-            display: inline-block;
-            padding: 0.6rem 1.2rem;
-            margin-top: 1rem;
-            font-size: 1rem;
-            font-family: "VT323", monospace;
-            border: 2px solid #3aff8b;
-            background: rgba(58, 255, 139, 0.1);
-            color: #3aff8b;
-            text-decoration: none;
-            cursor: pointer;
-            transition: all 0.3s ease;
-            box-shadow: 0 0 10px #3aff8b;
-            border-radius: 3px;
-            text-shadow: 0 0 10px #3aff8b;
-        }
-
-        .btn:hover {
-            background: #3aff8b;
-            color: #1a0033;
-            box-shadow: 0 0 20px #3aff8b, 0 0 40px #ff006e;
-            transform: scale(1.05);
-            text-shadow: none;
-        }
-
-        .timestamp {
-            font-size: 0.8rem;
-            margin-top: 1rem;
-            color: #663389;
-        }
-
-        @media (max-width: 600px) {
-            .header-text {
-                font-size: 2rem;
-            }
-
-            .subtitle {
-                font-size: 1.1rem;
-            }
-
-            .construction-ascii {
-                font-size: 0.6rem;
-            }
-
-            .tools-list {
-                flex-direction: column;
-                gap: 0.3rem;
-            }
-
-            .tool-badge {
-                width: 100%;
-            }
-        }
-    </style>
-</head>
-<body>
-
+    <link rel="stylesheet" href="../style.css" />
+  </head>
+  <body>
     <div class="container">
-        <div class="header-text"> :: UNDER CONSTRUCTION :: </div>
+      <header>
+        <div id="top"></div>
+      </header>
+      <!---this is the navigation section (on the left): -->
+      <nav>
+        <h2>> Menu <span class="blink">_</span></h2>
+        <div class="aside">
+          <ul>
+            <li>
+              <a href="../index.html"> Home page </a>
+              <ul>
+                this website´s
+                <li>
+                  <a href="../index.html#link-neighborhood"> neighborhood </a>
+                </li>
 
-        <div class="subtitle">> working on it!</div>
-        <img src="https://file.garden/aE7eugw0EBvaQzOF/assets/underconstruction.webp" alt="Under Construction" width="100%">
-       
+                <li><a href="../index.html#link-changelog"> changelog </a></li>
+                <li>
+                  <a href="../index.html#link-guestbook"> guestbook </a>
+                </li>
+              </ul>
+            </li>
+            <li>
+              <a href="/public/about.html">About</a>
+              <ul>
+                about _
+                <li>
+                  <a href="/public/about.html#link-webmaster">the webmaster </a>
+                </li>
+                <li>
+                  <a href="/public/about.html#link-unknown-entity">
+                    unknown entity 1806
+                  </a>
+                </li>
+              </ul>
+            </li>
+            <li><a href="/public/blog.html"> Library </a></li>
+            <li><a href="/public/gallery.html"> > Art gallery</a></li>
+            <li><a href="/public/shrines.html"> Shrines </a></li>
+            <li><a href="/public/for-you.html"> Freebies for you </a></li>
+          </ul>
+        </div>
+      </nav>
 
-        
-        <div class="timestamp">
-            > please be patient with me ♡
+      <!---START of the main section on the right: -->
+      <main>
+        <h1>> Art gallery</h1>
+        <h2>Where i share my favorite art I made</h2>
+
+        <hr class="rounded" />
+
+        <!---this is the window div : -->
+        <div class="window">
+          <p class="window-title">!!! This is a temporary version !!!</p>
+          <p>
+            I aim to make this gallery more fun, by having the different
+            collections have their own styled layouts. But for now, You can see
+            a selection of my creations jumbled together below.
+          </p>
+          <h3>Why do I see also a Studio Louma logo?</h3>
+          <p>This is because my former art handle was Studio Louma! Read more <a href="../public/about.html#link-unknown-entity">here</a> about this change in identity. </p>
         </div>
 
-        <div class="home-link">
-            <a href="../index.html" class="btn">> RETURN HOME _</a>
+        <hr class="rounded" />
+        <!---START of gallery section incl modal div -->
+
+        <div class="gallery" id="gallery">
+          <!-- Add your image thumbnails here -->
+          <div class="thumbnail">
+            <img
+              src="https://file.garden/aE7eugw0EBvaQzOF/assets/portfolio/profile%20pic.png"
+              alt="Entity 1806 - Profile Picture"
+              title="Entity 1806 - Profile Picture"
+            />
+          </div>
+          <div class="thumbnail">
+            <img
+              src="https://file.garden/aE7eugw0EBvaQzOF/assets/portfolio/rotating%20head%20an.png"
+              alt="Entity 1806 - Rotating Head"
+              title="Entity 1806 - Rotating Head"
+            />
+          </div>
+          <div class="thumbnail">
+            <img
+              src="https://file.garden/aE7eugw0EBvaQzOF/assets/portfolio/chibi_entity2.png"
+              alt="Entity 1806 - Sad"
+              title="Entity 1806 - Sad"
+            />
+          </div>
+          <div class="thumbnail">
+            <img
+              src="https://file.garden/aE7eugw0EBvaQzOF/assets/portfolio/chibi_entity1a.png"
+              alt="Entity 1806 - Happy"
+              title="Entity 1806 - Happy"
+            />
+          </div>
+          
+          <div class="thumbnail">
+            <img
+              src="https://file.garden/aE7eugw0EBvaQzOF/assets/portfolio/autumn%20fox.webp"
+              alt="Fairy and fox"
+              title="Fairy and fox - created for a nursery gift in 2025"
+            />
+          </div>
+          <div class="thumbnail">
+            <img
+              src="https://file.garden/aE7eugw0EBvaQzOF/assets/portfolio/autumn%2025-updated.png"
+              alt="Autumn fairy village"
+              title="Autumn Fairy Village - created November 2025 as gift for my mother"
+            />
+          </div>
+          <div class="thumbnail">
+            <img
+              src="https://file.garden/aE7eugw0EBvaQzOF/assets/portfolio/wallpaper.webp"
+              alt="Autumn fairy festivities"
+              title="Autumn Fairy  Festivities - created in 2024 as a desktop wallpaper for Ko-fi supporters"
+            />
+          </div>
+          <div class="thumbnail">
+            <img
+              src="https://file.garden/aE7eugw0EBvaQzOF/assets/portfolio/FrostyFairy_desktopwallpaperv.2.webp"
+              alt="Skating winter fairies"
+              title="Winter fairies skating on ice - created in 2025 as a desktop wallpaper for Ko-fi supporters"
+            />
+          </div>
+           <div class="thumbnail">
+            <img
+              src="https://file.garden/aE7eugw0EBvaQzOF/assets/portfolio/Meettheartist24.png"
+              alt="Meet the artist 2024"
+              title="Meet the artist 2024 - created in 2024 as part of an art challenge"
+            />
+          </div>
+           <div class="thumbnail">
+            <img
+              src="https://file.garden/aE7eugw0EBvaQzOF/assets/About/Meettheartist2526.jpg"
+              alt="Meet the artist 2025 - 2026"
+              title="Meet the artist 2025 - 2026 - created in 2025 as part of an art challenge"
+            />
+          </div>
+          <div class="thumbnail">
+            <img
+              src="https://file.garden/aE7eugw0EBvaQzOF/assets/portfolio/mermaids%20complete%20small.png"
+              alt="Mermay 2025"
+              title="Mermaid illustration for MermMAY 2025 art challenge"
+            />
+          </div>
+
+          <!-- add new thumbnails above this-->
         </div>
 
-        
+        <!-- END of gallery section  modal -->
+         <hr class="rounded" />
+        <div class="pagenav">
+          <a href="#top"> > Back to top _</a>
+        </div>
+      </main>
+
+      <!-- START modal section -->
+      <div class="modal" id="modal">
+        <span class="close">×</span>
+        <div class="modal-content">
+          <div class="modal-wrapper">
+            <img
+              id="modalImage"
+              src="https://file.garden/aE7eugw0EBvaQzOF/assets/portfolio/rotating%20head%20an.png"
+              alt=""
+              title="Entity 1806 - Rotating Head"
+            />
+            <p class="modal-description" id="modalDescription"></p>
+          </div>
+        </div>
+      </div>
+
+      <footer>
+        &copy; 2026 webmaster Malou a.k.a.
+        <a href="../index.html">Unknown Entity 1806</a>
+      </footer>
     </div>
-</body>
+
+    <script>
+      const thumbnails = document.querySelectorAll(".thumbnail img");
+      const modal = document.getElementById("modal");
+      const modalImage = document.getElementById("modalImage");
+      const modalDescription = document.getElementById("modalDescription");
+      const closeBtn = document.querySelector(".close");
+
+      thumbnails.forEach((img) => {
+        img.addEventListener("click", () => {
+          modal.classList.add("active");
+          modalImage.src = img.src;
+          modalImage.title = img.title;
+          modalDescription.textContent = img.title;
+        });
+      });
+
+      closeBtn.addEventListener("click", () => {
+        modal.classList.remove("active");
+      });
+
+      modal.addEventListener("click", (e) => {
+        if (e.target === modal) {
+          modal.classList.remove("active");
+        }
+      });
+    </script>
+  </body>
 </html>
