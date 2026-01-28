@@ -9,6 +9,12 @@
   color: rgb(56, 24, 51);
   background: #3aff8b;
 }
+
+mark{
+  background-color: #fff176;
+  color: rgb(56, 24, 51);
+  font-weight: bold;}
+
 body {
   min-height: 100vh;
   font-family: "Courier New", Courier, monospace;
@@ -81,6 +87,13 @@ h2 {
 }
 h3 {
   color: #6fb88d;
+}
+
+h4{
+  Color:#6f5686;
+  font-family: "silkscreen", sans-serif;
+  padding-top: 15px;
+  padding-bottom: 5px;
 }
 
 /* Rounded border */
