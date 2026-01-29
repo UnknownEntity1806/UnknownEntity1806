@@ -7,3 +7,5 @@
   <li>HTML</li>
   <li>CSS</li>
 </ul>
+<p>I am using GitHub pages to push my static personal website.</p>
+<p>You can see it here: <a href="www.unknownentity1806.page"> unknown entity 1806.page </a> </p>
