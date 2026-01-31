@@ -15,9 +15,23 @@ mark{
   color: rgb(56, 24, 51);
   font-weight: bold;}
 
+  .flex {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  max-width:1200px;
+  margin: 0 auto;
+
+}
+
 body {
   min-height: 100vh;
-  font-family: "Courier New", Courier, monospace;
+  font-family: "Courier New", Courier, monospace; 
+  background-color: #cbe1d2;
+  background-image: url(https://unknownentity1806.page/assets/images/background_cityscape.png);
+  background-attachment: fixed;
+  background-size: cover;
 }
 
 /* Grid container */
@@ -30,10 +44,7 @@ body {
     "nav    main"
     "footer footer";
   min-height: 100vh;
-  background-color: #cbe1d2;
-  background-image: url(https://unknownentity1806.page/assets/images/background_cityscape.png);
-  background-attachment: fixed;
-  background-size: cover;
+ 
 }
 
 /* Grid areas */
