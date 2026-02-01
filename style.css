@@ -478,12 +478,14 @@ nav li:hover > ul {
   max-width: 100%;
   margin: 20px auto;
   padding: 20px;
+  display: flex;
+  justify-content: center;
 }
 
 .image-button {
   position: relative;
   width: 40%;
-  float: left;
+  display: inline-block;
   margin-left: 10px;
 }
 

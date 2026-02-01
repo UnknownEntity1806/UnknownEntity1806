@@ -53,7 +53,7 @@ background-image: url(https://file.garden/aE7eugw0EBvaQzOF/assets/CloudyDay/Chlo
 header {
   grid-area: header;
   padding: 1rem;
-  background-image: url("https://file.garden/aE7eugw0EBvaQzOF/assets/CloudyDay/Header_Chloe%CC%88.webp");
+  background-image: url("/assets/images/header-chloe.webp");
   background-position: center ;
  background-size: contain;
 background-repeat: no-repeat;
@@ -71,6 +71,7 @@ main {
   border-radius: 10px;
   margin: 10px;
   z-index: 0;
+  text-align: center;
 }
 
 footer {
@@ -94,14 +95,17 @@ h1 {
   color: rgb(86, 160, 239);
   padding-bottom: 15px;
   font-family: "DynaPuff", system-ui;
+  text-align: left;
 }
 h2 {
   color:#e856ad;
   padding-bottom: 15px;
   font-family: "DynaPuff", system-ui;
+  text-align: left;
 }
 h3 {
   color: rgb(86, 160, 239);
+  text-align: left;
 }
 
 h4 {
@@ -109,6 +113,7 @@ h4 {
   font-family: "DynaPuff", system-ui;   
   padding-top: 15px;
   padding-bottom: 5px;
+  text-align: left;
 }
 u{
     text-decoration: rgb(86, 160, 239) wavy underline;
@@ -144,6 +149,9 @@ video {
 p {
   padding: 10px 5px 5px 5px;
 
+}
+main p {
+  text-align: left;
 }
 /* p is centered in parent and text is centered*/
 .center {
@@ -196,6 +204,9 @@ article {
   min-width: 200px;
   flex: 1 1 100%;
   position: relative;
+  overflow: auto;
+  display: inline-block;
+  vertical-align: top;
 }
 .small {
   flex: 1 2 40%;
@@ -234,6 +245,14 @@ main li::before {
   vertical-align: middle;
 }
 
+.main-ul {
+  text-align: left;
+  margin-left: 20px;
+  p{
+    color: #e856ad;
+  }
+}
+
 /* navigation to the top of the page */
 .pagenav {
   font-weight: bolder;
@@ -254,6 +273,20 @@ nav {
   position: sticky;
   top: 0;
   height: fit-content;
+}
+.navtitle {
+  text-align: center;
+  margin: 0 auto;
+  background-image: url("/assets/images/cloud-long.webp");
+  background-position: center ;
+ background-size: contain;
+background-repeat: no-repeat;
+ h2{
+    padding-top: 30px;
+    font-size: larger;
+    text-align: center;
+  }
+
 }
 
 .aside {
@@ -329,7 +362,8 @@ nav li:hover > ul {
 
 /*scrolling window in main*/
 .window {
-  max-height: 200px;
+  min-height: 200px;
+  max-height:600px;
   max-width: 90%;
   overflow: auto;
   border: solid 3px rgb(166, 203, 243);
@@ -355,7 +389,7 @@ nav li:hover > ul {
 /*changelog window stuff */
 .changelog {
   background: none;
-  max-width: 80%;
+  max-width: 90%;
   margin: 0 auto;
   position: relative;
   padding-top: 10px;
@@ -380,6 +414,7 @@ nav li:hover > ul {
     font-size: smaller;
     p {
       color: #ffffff;
+      display: none;
     }
   }
   .dot {
@@ -402,6 +437,25 @@ nav li:hover > ul {
     padding-left: 20px;
     text-transform: uppercase;
   }
+}
+
+/* START of colour pattern boxes */
+.colorpalette {
+  display: flex;
+  gap: 10px;
+  margin: 20px 0;
+}
+.color-swatch{
+  width: 100px;
+  height: 100px;
+  border: 2px solid #ffffff;
+  border-radius: 8px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: 12px;
+  color: #333;
 }
 
 
@@ -431,14 +485,16 @@ nav li:hover > ul {
 /*  START OF PORTFOLIO GALLERY STUFF */
 .image-button-container {
   max-width: 100%;
+  min-width: 200px;
   margin: 20px auto;
   padding: 20px;
+  align-items: center;
 }
 
 .image-button {
   position: relative;
   width: 40%;
-  float: left;
+    display: inline-block;
   margin-left: 10px;
 }
 
@@ -564,5 +620,11 @@ text-decoration: none;
         color: #666;
         font-style: italic;
       }
+
+/* Brick wall layout for articles */
+.brick-wall {
+  column-count: 2;
+  column-gap: 15px;
+}
 
 /* END of gallery and portfolio stuff */
