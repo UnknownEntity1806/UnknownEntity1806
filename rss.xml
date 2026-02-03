@@ -6,12 +6,20 @@
 <atom:link href="https://www.unknownentity1806.page/rss.xml" rel="self" type="application/rss+xml"/>
 <ttl>1440</ttl>
 <webMaster>webmaster@unknownentity1806.page</webMaster>
-<lastBuildDate> Tue, 27 Jan 2026 10:54:00 +0100 </lastBuildDate>
+<lastBuildDate> Tue, 03 Feb 2026 15:01:00 +0100 </lastBuildDate>
 <language>en-us</language>
   
 <!-- 
   Place your feed items here.
    -->
+<item>
+<title>Monthly update</title>
+<description>
+An update on what has been happening in the last month. A new dedicated gallery page for my OC @itsCloudyDay. Some new freebies are added. And I show some of my works in progress for February. </description>
+<link>https://unknownentity1806.page/public/blog.html#link-post3</link>
+<pubDate> Tue, 03 Feb 2026 15:01:00 +0100 </pubDate>
+</item>
+
 <item>
 <title>Fully live! </title>
 <description>
@@ -27,21 +35,7 @@
 <pubDate> Sun, 25 Jan 2026 10:49:35 +0100 </pubDate>
 </item>
 
-<item>
-<guid>https://unknownentity1806.page/public/Blog/w-i-p/january-01.html</guid>
-<title>Works in Progress January</title>
-<description> A little bit of my works in progress in January. Some might be finished this month. Others are more ideas that are for further in the future. </description>
-<link>https://unknownentity1806.page/public/Blog/w-i-p/january-01.html</link>
-<pubDate> Sun, 11 Jan 2026 10:49:35 +0100 </pubDate>
-</item>
 
-<item>
-<guid>https://unknownentity1806.page/public/Blog/2026-01.html</guid>
-<title>Hello World, Hello 2026!</title>
-<description> It is 2026, and this is my first blogpost! So stoked for it. I wanted to share a video I made for my old YT channel. </description>
-<link>https://unknownentity1806.page/public/Blog/2026-01.html</link>
-<pubDate> Thu, 01 Jan 2026 17:49:35 +0100 </pubDate>
-</item>
 
 </channel>
 </rss>
