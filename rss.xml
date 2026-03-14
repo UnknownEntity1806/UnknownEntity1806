@@ -6,12 +6,22 @@
 <atom:link href="https://www.unknownentity1806.page/rss.xml" rel="self" type="application/rss+xml"/>
 <ttl>1440</ttl>
 <webMaster>webmaster@unknownentity1806.page</webMaster>
-<lastBuildDate> Tue, 03 Feb 2026 15:01:00 +0100 </lastBuildDate>
+<lastBuildDate> Sat, 14 Mar 2026 10:00:00 +0100 </lastBuildDate>
 <language>en-us</language>
   
 <!-- 
   Place your feed items here.
    -->
+<item>
+<title>New monthly update</title>
+<description>
+A new monthly update has been posted in the library. In this update I talk about what I have been up to in the last month and what I am planning for the next month. I also
+show some of my works in progress for February. You can view the update <a href="/public/blog/march-26.html">here</a>.
+</description>
+<link>https://unknownentity1806.page/public/blog/march-26.html</link>
+<pubDate> Sat, 14 Mar 2026 10:00:00 +0100 </pubDate>
+</item>
+
 <item>
 <title> New illustration: CloudyDay x Pokemon </title>
 <description>
