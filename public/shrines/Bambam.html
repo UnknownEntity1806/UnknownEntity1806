@@ -1,0 +1,537 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>BamBam Memorial Shrine</title>
+    <style>
+      :root {
+        --color-dark: #1e322f;
+        --color-light-bg: #f4f2e6;
+        --color-light: #7e8c8b;
+        --color-white: #ffffff;
+        --color-white-transparent: rgba(255, 255, 255, 0.8);
+        --color-black-transparent-light: rgba(0, 0, 0, 0.5);
+        --color-black-transparent-dark: rgba(0, 0, 0, 0.8);
+        --color-footer-bg: #1e322f;
+        --color-footer-text: #f4f2e6;
+        --color-red: #6d2f34;
+      }
+
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+
+      body {
+        font-family: "Courier New", monospace;
+        background-color: var(--color-light-bg);
+        background-image: url("https://file.garden/aE7eugw0EBvaQzOF/assets/Bambam%20shrine/pattern100px.jpg");
+        background-size: repeat;
+        background-attachment: fixed;
+        color: var(--color-dark);
+      }
+
+      mark {
+        background-color: var(--color-red);
+        color: var(--color-white);
+        padding: 0 5px;
+      }
+
+      .container {
+        max-width: 900px;
+        margin: 50px auto;
+        padding: 0px;
+      }
+      header {
+        text-align: center;
+        padding: 20px 0;
+        background-color: var(--color-white-transparent);
+        border: 2px solid var(--color-dark);
+      }
+      .grid-container {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        gap: 10px;
+        padding: 10px 0px;
+      }
+      hr {
+        border: none;
+        border-top: 2px solid var(--color-dark);
+        margin: 10px 0;
+      }
+      .bio {
+        background-color: var(--color-white-transparent);
+        border: 2px solid var(--color-dark);
+        padding: 20px;
+        text-align: left;
+        font-size: 14px;
+        h2 {
+          margin-bottom: 15px;
+        }
+
+        p {
+          margin-bottom: 10px;
+        }
+      }
+      .bb-paw {
+        max-width: 20px;
+        height: auto;
+        float: left;
+        margin-right: 10px;
+      }
+      .plaque {
+        background-color: var(--color-white-transparent);
+        border: 2px solid var(--color-dark);
+        padding: 10px;
+        text-align: center;
+        font-size: 18px;
+        img {
+          max-width: 100%;
+          height: auto;
+        }
+      }
+      .pet {
+        background-color: var(--color-white-transparent);
+        border: 2px solid var(--color-dark);
+        padding: 20px;
+        text-align: center;
+        font-size: 14px;
+        h2 {
+          margin-bottom: 15px;
+        }
+      }
+
+      .gallery {
+        background-color: var(--color-white-transparent);
+        border: 2px solid var(--color-dark);
+        padding: 20px;
+        text-align: center;
+        font-size: 14px;
+      }
+
+      table {
+        border-collapse: collapse;
+        border: 2px solid var(--color-dark);
+        width: 100%;
+        background-color: var(--color-light);
+        color: #f4f2e6;
+      }
+      caption {
+        caption-side: bottom;
+        padding: 10px;
+        font-weight: bold;
+        margin-bottom: 5px;
+        color: var(--color-dark);
+      }
+      th,
+      td {
+        border: 1px solid var(--color-dark);
+        padding: 8px 10px;
+        text-align: center;
+      }
+
+      .half-page {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 10px;
+        padding: 10px 0px;
+      }
+
+      .half-page article {
+        background-color: var(--color-white-transparent);
+        border: 2px solid var(--color-dark);
+        padding: 20px;
+        text-align: left;
+        font-size: 14px;
+      }
+
+      .half-page h2 {
+        margin-bottom: 15px;
+      }
+
+      .half-page p {
+        margin-bottom: 10px;
+      }
+
+      .carousel-container {
+        position: relative;
+        width: 100%;
+        overflow: hidden;
+        margin-top: 10px;
+      }
+
+      .carousel-track {
+        display: flex;
+        gap: 10px;
+        transition: transform 0.5s ease-in-out;
+      }
+
+      .carousel-item {
+        position: relative;
+        flex: 0 0 calc(33.333% - 7px);
+        min-width: 0;
+      }
+
+      .carousel-item img {
+        width: 100%;
+        height: auto;
+        border: var(--color-dark) solid 2px;
+        border-radius: 10px;
+        padding: 5px;
+        background-color: var(--color-white);
+        cursor: pointer;
+        display: block;
+      }
+
+      .carousel-button {
+        position: absolute;
+        top: 50%;
+        transform: translateY(-50%);
+        background-color: var(--color-black-transparent-light);
+        color: var(--color-white);
+        border: none;
+        padding: 10px 15px;
+        font-size: 18px;
+        cursor: pointer;
+        z-index: 10;
+        border-radius: 5px;
+      }
+
+      .carousel-button:hover {
+        background-color: var(--color-black-transparent-dark);
+      }
+
+      .carousel-prev {
+        left: 5px;
+      }
+
+      .carousel-next {
+        right: 5px;
+      }
+      .memory-item {
+        background-color: var(--color-red);
+        border: 2px solid var(--color-dark);
+        border-radius: 15px;
+        padding: 15px;
+        margin-bottom: 10px;
+        color: var(--color-white);
+        text-align: center;
+        height:80%;
+      }
+
+      #overlay {
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background: var(--color-black-transparent-dark);
+        display: none;
+        justify-content: center;
+        align-items: center;
+        z-index: 1000;
+      }
+
+      #overlay-img {
+        max-width: 90%;
+        max-height: 90%;
+      }
+
+      #overlay-title {
+        position: absolute;
+        top: 10px;
+        color: white;
+        font-size: 20px;
+        text-align: center;
+        width: 100%;
+      }
+
+      footer{
+        text-align: center;
+        padding: 20px 0;
+        background-color: var(--color-footer-bg);
+        color: var(--color-footer-text);
+        border-top: 2px solid var(--color-dark);
+        a{
+          color: var(--color-footer-text);
+          text-decoration: double underline;
+          font-weight: bold;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <header>
+        <h3>Shrine of the Mighty Undying</h3>
+        <h1>BamBam</h1>
+      </header>
+      <div class="grid-container">
+        <article class="bio">
+          <img
+            class="bb-paw"
+            src="https://file.garden/aE7eugw0EBvaQzOF/assets/Bambam%20shrine/IMG_0014.PNG"
+          />
+          <h2>About BamBam</h2>
+          <hr />
+          <p>
+            Bambam came into my life when he was already 11 years old (in 2021).
+            His former owner had passed away. The family could not take care of
+            him, as Bambam had been mistreated and did not fully trust other
+            humans nor dogs.
+          </p>
+          <p>
+            I was already looking for a senior dog, because they often have the
+            smallest chance of finding a new home. And I really wanted to
+            provide a senior with a loving,kind and quiet life.
+          </p>
+          <p>
+            I am happy that BamBam was able to trust me and became a very loving
+            dog towards me. He lived his last years in peace and comfort. And he
+            provided me with a lot of emotional support and joy when I reached
+            my lowest points in life.<mark
+              >I am very grateful for the time we had together and I will always
+              cherish the memories we made.</mark
+            >
+          </p>
+          <img
+            style="max-width: 20px; height: auto; margin-left: 50%"
+            src="https://file.garden/aE7eugw0EBvaQzOF/assets/Bambam%20shrine/IMG_0014.PNG"
+          />
+        </article>
+
+        <article class="plaque">
+          <img
+            class="illustration"
+            src="https://file.garden/aE7eugw0EBvaQzOF/assets/Bambam%20shrine/Ba%2Cba%2C%20commission.jpeg"
+            alt="Commissioned artwork of BamBam by @ArtfulEndeavor via TikTok."
+            title="Commissioned artwork of BamBam by @ArtfulEndeavor via TikTok."
+          />
+          <p>
+            <b>Rest in Peace</b> <br />
+            2010 - 2025
+          </p>
+          <img
+            src="https://file.garden/aE7eugw0EBvaQzOF/assets/Bambam%20shrine/IMG_0015.GIF"
+          />
+        </article>
+        <article class="pet">
+          <img
+            class="bb-paw"
+            src="https://file.garden/aE7eugw0EBvaQzOF/assets/Bambam%20shrine/IMG_0014.PNG"
+          />
+          <h2>Support BamBam</h2>
+          <hr />
+          <p>
+            If you want to <mark>show some love for BamBam</mark>, you can use
+            the graphics below to decorate your own online space.
+          </p>
+          <img src="https://file.garden/aE7eugw0EBvaQzOF/assets/underconstruction.webp" width="80%" title="Graphics coming soon">
+        </article>
+      </div>
+      <div class="half-page">
+        <article class="name">
+          <h2>They call me...</h2>
+
+          <table>
+            <caption>
+              That's not my name!
+              <br />
+              <img
+                src="https://file.garden/aE7eugw0EBvaQzOF/assets/Bambam%20shrine/IMG_0015.GIF"
+              />
+            </caption>
+            <tbody>
+              <tr>
+                <td>MabMab</td>
+                <td>Bammie</td>
+                <td>Bammert</td>
+              </tr>
+              <tr>
+                <td>Bammetje</td>
+                <td>'lil asshole</td>
+                <td>sausage</td>
+              </tr>
+              <tr>
+                <td>little one</td>
+                <td>Grandpa</td>
+                <td>Grumpy</td>
+              </tr>
+              <tr>
+                <td>obersturmbannfuhrer</td>
+                <td>bonbon</td>
+                <td>bebe</td>
+              </tr>
+            </tbody>
+          </table>
+        </article>
+        <article class="memory">
+          <h2>A cherised Memory ...</h2>
+          <div class="memory-item">
+            <p>description of memory</p>
+                      <img src="https://file.garden/aE7eugw0EBvaQzOF/assets/underconstruction.webp" width="80%" title="Graphics coming soon">
+
+          </div>
+        </article>
+      </div>
+
+      <div class="gallery">
+        <h2>Gallery</h2>
+        <p>A collection of illustrations I created that feature BamBam</p>
+        <hr />
+        <div class="carousel-container">
+          <button class="carousel-button carousel-prev">❮</button>
+          <div class="carousel-track" id="carouselTrack">
+            <div class="carousel-item">
+              <img
+                class="illustration"
+                src="https://file.garden/aE7eugw0EBvaQzOF/assets/Bambam%20shrine/Meettheartist24.png"
+                title="Meet the Artist 2024 - featuring BamBam"
+              />
+            </div>
+            <div class="carousel-item">
+              <img
+                class="illustration"
+                src="https://file.garden/aE7eugw0EBvaQzOF/assets/Bambam%20shrine/bambam%20kopie.png"
+                title="Happiness can be found in the small things - featuring BamBam"
+              />
+            </div>
+            <div class="carousel-item">
+              <img
+                class="illustration"
+                src="https://file.garden/aE7eugw0EBvaQzOF/assets/Bambam%20shrine/BamBam.png"
+                title="Minimalist line portrait of BamBam"
+              />
+            </div>
+            <div class="carousel-item">
+              <img
+                class="illustration"
+                src="https://file.garden/aE7eugw0EBvaQzOF/assets/Bambam%20shrine/survivingthedarkFINI.png"
+                title="Surviving the Dark - featuring BamBam"
+              />
+            </div>
+            <div class="carousel-item">
+              <img
+                class="illustration"
+                src="https://file.garden/aE7eugw0EBvaQzOF/assets/Bambam%20shrine/bambam%20king.png"
+                title="BamBam as a King"
+              />
+            </div>
+            <div class="carousel-item">
+              <img
+                class="illustration"
+                src="https://file.garden/aE7eugw0EBvaQzOF/assets/Bambam%20shrine/GrandmaKeikoDTIYs.png"
+                title="Grandma Keiko 's DTIYS challenge - featuring BamBam"
+              />
+            </div>
+            <div class="carousel-item">
+              <img
+                class="illustration"
+                src="https://file.garden/aE7eugw0EBvaQzOF/assets/Bambam%20shrine/Rickjeerrtwork%20-%20kopie.png"
+                title="Surviving the DEAD - featuring BamBam"
+              />
+            </div>
+            <div class="carousel-item">
+              <img
+                class="illustration"
+                src="https://file.garden/aE7eugw0EBvaQzOF/assets/Bambam%20shrine/Bambam%20and%20me%20afstand%20randen.png"
+                title="Christmas card 2022 - featuring BamBam"
+              />
+            </div>
+            <div class="carousel-item">
+              <img
+                class="illustration"
+                src="https://file.garden/aE7eugw0EBvaQzOF/assets/Bambam%20shrine/copingmechanisms-small.png"
+                title="Coping Mechanisms - featuring BamBam"
+              />
+            </div>
+            <div class="carousel-item">
+              <img
+                class="illustration"
+                src="https://file.garden/aE7eugw0EBvaQzOF/assets/Bambam%20shrine/02%20xmas2024%20new%20no%20logo.png"
+                title="Christmas card 2024 - featuring BamBam"
+              />
+            </div>
+          </div>
+          <button class="carousel-button carousel-next">❯</button>
+        </div>
+      </div>
+      
+
+      <footer>
+        <a href="/public/shrines.html">Go back</a> <br />
+        <p>
+          &copy; Unknown Entity 1806. This shrine is dedicated to BamBam
+          [2010-2025], my beloved pet.
+        </p>
+      </footer>
+    </div>
+
+    <div id="overlay">
+      <span id="overlay-title"></span>
+      <img id="overlay-img" />
+    </div>
+
+    <script>
+      // Overlay functionality
+      document.querySelectorAll(".illustration").forEach((img) => {
+        img.addEventListener("click", () => {
+          const overlay = document.getElementById("overlay");
+          const overlayImg = document.getElementById("overlay-img");
+          const overlayTitle = document.getElementById("overlay-title");
+          overlayImg.src = img.src;
+          overlayTitle.textContent = img.title || img.alt;
+          overlay.style.display = "flex";
+        });
+      });
+
+      document.getElementById("overlay").addEventListener("click", () => {
+        document.getElementById("overlay").style.display = "none";
+      });
+
+      // Carousel functionality
+      const carouselTrack = document.getElementById("carouselTrack");
+      const items = carouselTrack.querySelectorAll(".carousel-item");
+      const itemWidth = 33.333; // 3 columns = 33.333% each
+      let currentIndex = 0;
+      const autoScrollInterval = 5000; // Auto-scroll every 5 seconds
+
+      function updateCarousel() {
+        const offset = -currentIndex * itemWidth;
+        carouselTrack.style.transform = `translateX(${offset}%)`;
+      }
+
+      function nextSlide() {
+        currentIndex = (currentIndex + 1) % (items.length - 2);
+        updateCarousel();
+      }
+
+      function prevSlide() {
+        currentIndex =
+          (currentIndex - 1 + (items.length - 2)) % (items.length - 2);
+        updateCarousel();
+      }
+
+      // Manual navigation
+      document
+        .querySelector(".carousel-next")
+        .addEventListener("click", nextSlide);
+      document
+        .querySelector(".carousel-prev")
+        .addEventListener("click", prevSlide);
+
+      // Auto-scroll
+      let autoScroll = setInterval(nextSlide, autoScrollInterval);
+
+      // Reset auto-scroll on manual interaction
+      document
+        .querySelector(".carousel-container")
+        .addEventListener("click", () => {
+          clearInterval(autoScroll);
+          autoScroll = setInterval(nextSlide, autoScrollInterval);
+        });
+    </script>
+  </body>
+</html>
