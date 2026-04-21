@@ -1,0 +1,72 @@
+<!doctype html>
+<html><head>
+      <meta charset="utf-8">
+      <link rel="preconnect" href="https://fonts.googleapis.com">
+      <link href="https://fonts.googleapis.com/css2?family=Silkscreen:wght@400;700&amp;family=VT323&amp;display=swap" rel="stylesheet">
+      <link rel="stylesheet" type="text/css" href="https://unknownentity1806.page/styles/style.css">
+      <title>Unknown Entity 1806</title>
+  </head><body>
+    <div class="flex">
+      <div class="container"><header>
+</header>
+<nav>
+  <ul>
+    <li><a href="/">Home</a></li>    
+    <li><a href="/about">About</a></li>
+    <li><a href="/posts">Library</a></li>
+    <li><a href="/galleries">Art gallery</a></li>
+    <li><a href="/shrines">Shrines</a></li>
+    <li><a href="/freebies">Freebies for you</a></li>
+  </ul>
+</nav>
+<div class="content">
+           <h1><span class="blink">></span> WIPs Jan 2026</h1>
+<div class="meta-data">
+  <p>Sunday, 11-01-2026</p>
+   Tags: 
+  <a href="https://unknownentity1806.page/tags/monthly-update">monthly-update</a>
+
+
+</div>
+<div class="post-content"><p>A little bit of my works in progress in January. Some might be finished this month. Others are more ideas that are for further in the future.</p>
+<p><strong>First</strong>, I am constantly working and thinking about upgrading the website. My idea for version 2.0 is to have the different portfolio categories have their own themed layout. So I have made some sketches for that. Although I will not start actually working on coding version 2.0 until all the pages are up and running in version 1.2.
+sketch of a website layout with clouds</p>
+<p><img src="https://file.garden/aE7eugw0EBvaQzOF/blog/2026/cloudydaysketch.webp" alt="Cloudy day layout sketch"></p>
+<p><strong>Second</strong>, I am working on expanding the amount of detail in my drawing from the <em><strong>Walk in the Forest</strong></em> universe I made this past November. I really like the colours and everything, but I always seem to give up once I have made 1-2 fairies. I want to try and improve the details in my bigger drawings, so that they become illustrations you can really stare at for a longer time. It&rsquo;s hard to see now, but up until now I have included one other fairy and some falling leaves.
+sketch of a website layout with clouds</p>
+<p><strong>Third</strong>, I am working on making some more buttons to put on the <em><strong>ABOUT</strong></em> page, which will probably also be available on the <em><strong>FOR YOU</strong></em> as a freebie. I know that there are a lot of ready made buttons available already. But I like to try and make things for myself ^^
+<img src="https://file.garden/aE7eugw0EBvaQzOF/assets/portfolio/autumn%2025-updated.png" alt="Walk in the Forest - autumn"></p>
+<p><strong>So</strong>, those are the things I am working on this month. As I am also in the process of moving over to the winter-house, it&rsquo;s not a lot. But I wanted to give this update in any case.</p>
+<a href="/posts/"> Back to overview</a></div>
+
+
+        </div><footer>
+    <p> © 2026 webmaster Malou a.k.a. <a href="/">Unknown Entity 1806</a></p>
+</footer></div>
+    </div>
+  </body> <script>
+      const thumbnails = document.querySelectorAll(".thumbnail img");
+      const modal = document.getElementById("modal");
+      const modalImage = document.getElementById("modalImage");
+      const modalDescription = document.getElementById("modalDescription");
+      const closeBtn = document.querySelector(".close");
+
+      thumbnails.forEach((img) => {
+        img.addEventListener("click", () => {
+          modal.classList.add("active");
+          modalImage.src = img.src;
+          modalImage.title = img.title;
+          modalDescription.textContent = img.getAttribute("description");
+        });
+      });
+
+      closeBtn.addEventListener("click", () => {
+        modal.classList.remove("active");
+      });
+
+      modal.addEventListener("click", (e) => {
+        if (e.target === modal) {
+          modal.classList.remove("active");
+        }
+      });
+    </script></html>

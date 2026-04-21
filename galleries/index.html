@@ -1,0 +1,75 @@
+<!doctype html>
+<html><head>
+      <meta charset="utf-8">
+      <link rel="preconnect" href="https://fonts.googleapis.com">
+      <link href="https://fonts.googleapis.com/css2?family=Silkscreen:wght@400;700&amp;family=VT323&amp;display=swap" rel="stylesheet">
+      <link rel="stylesheet" type="text/css" href="https://unknownentity1806.page/styles/style.css">
+      <title>Unknown Entity 1806</title>
+  </head><body>
+    <div class="flex">
+      <div class="container"><header>
+</header>
+<nav>
+  <ul>
+    <li><a href="/">Home</a></li>    
+    <li><a href="/about">About</a></li>
+    <li><a href="/posts">Library</a></li>
+    <li><a href="/galleries">Art gallery</a></li>
+    <li><a href="/shrines">Shrines</a></li>
+    <li><a href="/freebies">Freebies for you</a></li>
+  </ul>
+</nav>
+<div class="content">
+           <h1><span class="blink">></span> Art gallery</h1>
+<h3>An overview of all illustrations sorted in their respective collections</h3>
+
+<div class="art-gallery"><h4 id="-please-note-that-art-may-be-signed-as-unknown-entity-1806-or-as-studio-louma-my-former-internet-artist-handle">* Please note that art may be signed as Unknown entity 1806 or as Studio Louma (my former internet artist handle)</h4>
+</div>
+
+
+<ul>
+  <li class="list-item">
+     <a href="/galleries/cloudy-day/"><p><img src="https://unknownentity1806.page/assets/images/IMG_0006.GIF" alt="Image"></p></a> 
+    
+</ul>
+
+<ul>
+  <li class="list-item">
+     
+   <h4><a href="/galleries/all/">All</a></h4> 
+</ul>
+ 
+
+ 
+
+
+        </div><footer>
+    <p> © 2026 webmaster Malou a.k.a. <a href="/">Unknown Entity 1806</a></p>
+</footer></div>
+    </div>
+  </body> <script>
+      const thumbnails = document.querySelectorAll(".thumbnail img");
+      const modal = document.getElementById("modal");
+      const modalImage = document.getElementById("modalImage");
+      const modalDescription = document.getElementById("modalDescription");
+      const closeBtn = document.querySelector(".close");
+
+      thumbnails.forEach((img) => {
+        img.addEventListener("click", () => {
+          modal.classList.add("active");
+          modalImage.src = img.src;
+          modalImage.title = img.title;
+          modalDescription.textContent = img.getAttribute("description");
+        });
+      });
+
+      closeBtn.addEventListener("click", () => {
+        modal.classList.remove("active");
+      });
+
+      modal.addEventListener("click", (e) => {
+        if (e.target === modal) {
+          modal.classList.remove("active");
+        }
+      });
+    </script></html>

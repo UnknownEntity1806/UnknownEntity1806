@@ -1,0 +1,70 @@
+<!doctype html>
+<html><head>
+      <meta charset="utf-8">
+      <link rel="preconnect" href="https://fonts.googleapis.com">
+      <link href="https://fonts.googleapis.com/css2?family=Silkscreen:wght@400;700&amp;family=VT323&amp;display=swap" rel="stylesheet">
+      <link rel="stylesheet" type="text/css" href="https://unknownentity1806.page/styles/style.css">
+      <title>Unknown Entity 1806</title>
+  </head><body>
+    <div class="flex">
+      <div class="container"><header>
+</header>
+<nav>
+  <ul>
+    <li><a href="/">Home</a></li>    
+    <li><a href="/about">About</a></li>
+    <li><a href="/posts">Library</a></li>
+    <li><a href="/galleries">Art gallery</a></li>
+    <li><a href="/shrines">Shrines</a></li>
+    <li><a href="/freebies">Freebies for you</a></li>
+  </ul>
+</nav>
+<div class="content">
+           <h1><span class="blink">></span> Versions</h1>
+
+<div class="about center"><p>An overview of all the different versions this website has been through. Just some simple screenshots.</p>
+<h3 id="version-20">Version 2.0:</h3>
+<p><img src="https://file.garden/aE7eugw0EBvaQzOF/assets/output.svg" alt="Version 2.0 of the website"></p>
+<p><em>This version was the first one that I felt capable of coding the website the way I wanted it to look</em></p>
+<hr>
+<h3 id="version-12">Version 1.2:</h3>
+<p><img src="https://file.garden/aE7eugw0EBvaQzOF/assets/About/layout%20v1.2" alt="Version 1.2 of the website"></p>
+<p><em>This was made with the help of @SadGirl&rsquo;s layout generator</em></p>
+<hr>
+<h3 id="version-11">Version 1.1:</h3>
+<p><img src="https://file.garden/aE7eugw0EBvaQzOF/assets/layout%20v1.png" alt="Version 1.0 of the website"></p>
+<p><em>This version was created just after I started my webdevelopment course</em></p>
+<hr>
+</div>
+<a class="pagination" href="/about/"> >> go back to About </a>
+
+        </div><footer>
+    <p> © 2026 webmaster Malou a.k.a. <a href="/">Unknown Entity 1806</a></p>
+</footer></div>
+    </div>
+  </body> <script>
+      const thumbnails = document.querySelectorAll(".thumbnail img");
+      const modal = document.getElementById("modal");
+      const modalImage = document.getElementById("modalImage");
+      const modalDescription = document.getElementById("modalDescription");
+      const closeBtn = document.querySelector(".close");
+
+      thumbnails.forEach((img) => {
+        img.addEventListener("click", () => {
+          modal.classList.add("active");
+          modalImage.src = img.src;
+          modalImage.title = img.title;
+          modalDescription.textContent = img.getAttribute("description");
+        });
+      });
+
+      closeBtn.addEventListener("click", () => {
+        modal.classList.remove("active");
+      });
+
+      modal.addEventListener("click", (e) => {
+        if (e.target === modal) {
+          modal.classList.remove("active");
+        }
+      });
+    </script></html>

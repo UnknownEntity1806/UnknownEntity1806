@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Macaria Academy on Unknown Entity 1806</title>
+    <link>http://localhost:1313/galleries/macaria-academy/</link>
+    <description>Recent content in Macaria Academy on Unknown Entity 1806</description>
+    <generator>Hugo</generator>
+    <language>en-uk</language>
+    <lastBuildDate>Tue, 14 Apr 2026 14:57:53 +0200</lastBuildDate>
+    <atom:link href="http://localhost:1313/galleries/macaria-academy/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Macaria Academy</title>
+      <link>http://localhost:1313/galleries/macaria-academy/macaria-academy/</link>
+      <pubDate>Tue, 14 Apr 2026 14:57:53 +0200</pubDate>
+      <guid>http://localhost:1313/galleries/macaria-academy/macaria-academy/</guid>
+      <description>&lt;h3 id=&#34;this-is-a-test-page-for-the-macaria-academy-gallery&#34;&gt;This is a test page for the Macaria Academy gallery.&lt;/h3&gt;&#xA;&lt;p&gt;THIS IS A SINGLE FILe.&lt;/p&gt;</description>
+    </item>
+  </channel>
+</rss>
