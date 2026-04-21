@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Test on Unknown Entity 1806</title>
+    <link>http://localhost:1313/tags/test/</link>
+    <description>Recent content in Test on Unknown Entity 1806</description>
+    <generator>Hugo</generator>
+    <language>en-uk</language>
+    <lastBuildDate>Sat, 11 Apr 2026 21:12:36 +0200</lastBuildDate>
+    <atom:link href="http://localhost:1313/tags/test/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Post 2</title>
+      <link>http://localhost:1313/posts/post-2/</link>
+      <pubDate>Sat, 11 Apr 2026 20:04:30 +0200</pubDate>
+      <guid>http://localhost:1313/posts/post-2/</guid>
+      <description></description>
+    </item>
+  </channel>
+</rss>
