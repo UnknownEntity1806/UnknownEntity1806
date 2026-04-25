@@ -9,3 +9,5 @@
 </ul>
 <p>I am using GitHub pages to push my static personal website.</p>
 <p>You can see it here: <a href="[www.unknownentity1806.page](https://unknownentity1806.page)"> unknown entity 1806.page </a> </p>
+
+<p>On my site I share my illustrations as well as some freebies (buttons, layout themes, etc.)</p>
