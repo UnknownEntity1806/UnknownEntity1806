@@ -2,11 +2,10 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Shrines on Unknown Entity 1806</title>
-    <link>https://unknownentity1806.page/shrines/</link>
+    <link>http://localhost:1313/shrines/</link>
     <description>Recent content in Shrines on Unknown Entity 1806</description>
     <generator>Hugo</generator>
     <language>en-uk</language>
-    <lastBuildDate></lastBuildDate>
-    <atom:link href="https://unknownentity1806.page/shrines/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="http://localhost:1313/shrines/index.xml" rel="self" type="application/rss+xml" />
   </channel>
 </rss>

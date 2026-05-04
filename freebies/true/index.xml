@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>True on Unknown Entity 1806</title>
+    <link>http://localhost:1313/freebies/true/</link>
+    <description>Recent content in True on Unknown Entity 1806</description>
+    <generator>Hugo</generator>
+    <language>en-uk</language>
+    <lastBuildDate>Thu, 01 Jan 2026 08:30:00 -0700</lastBuildDate>
+    <atom:link href="http://localhost:1313/freebies/true/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Coloring Pages</title>
+      <link>http://localhost:1313/freebies/coloringpages/</link>
+      <pubDate>Thu, 01 Jan 2026 08:30:00 -0700</pubDate>
+      <guid>http://localhost:1313/freebies/coloringpages/</guid>
+      <description>&lt;p&gt;coloring pages&amp;hellip;  .md&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Layout Themes</title>
+      <link>http://localhost:1313/freebies/layout-themes/</link>
+      <pubDate>Thu, 01 Jan 2026 08:30:00 -0700</pubDate>
+      <guid>http://localhost:1313/freebies/layout-themes/</guid>
+      <description>&lt;p&gt;layout themes .md&lt;/p&gt;</description>
+    </item>
+  </channel>
+</rss>

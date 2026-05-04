@@ -1,26 +1,11 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Art gallery on Unknown Entity 1806</title>
+    <title>Galleries on Unknown Entity 1806</title>
     <link>https://unknownentity1806.page/galleries/</link>
-    <description>Recent content in Art gallery on Unknown Entity 1806</description>
+    <description>Recent content in Galleries on Unknown Entity 1806</description>
     <generator>Hugo</generator>
     <language>en-uk</language>
-    <lastBuildDate>Mon, 20 Apr 2026 11:07:36 +0200</lastBuildDate>
     <atom:link href="https://unknownentity1806.page/galleries/index.xml" rel="self" type="application/rss+xml" />
-    <item>
-      <title>Cloudy Day</title>
-      <link>https://unknownentity1806.page/galleries/cloudy-day/</link>
-      <pubDate>Tue, 14 Apr 2026 16:52:03 +0200</pubDate>
-      <guid>https://unknownentity1806.page/galleries/cloudy-day/</guid>
-      <description>&lt;p&gt;&lt;img src=&#34;https://unknownentity1806.page/assets/images/IMG_0006.GIF&#34; alt=&#34;Image&#34;&gt;&lt;/p&gt;</description>
-    </item>
-    <item>
-      <title>All</title>
-      <link>https://unknownentity1806.page/galleries/all/</link>
-      <pubDate>Thu, 26 Feb 2026 16:52:03 +0200</pubDate>
-      <guid>https://unknownentity1806.page/galleries/all/</guid>
-      <description></description>
-    </item>
   </channel>
 </rss>

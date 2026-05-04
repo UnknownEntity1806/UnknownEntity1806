@@ -2,11 +2,32 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Freebies on Unknown Entity 1806</title>
-    <link>https://unknownentity1806.page/freebies/</link>
+    <link>http://localhost:1313/freebies/</link>
     <description>Recent content in Freebies on Unknown Entity 1806</description>
     <generator>Hugo</generator>
     <language>en-uk</language>
-    <lastBuildDate></lastBuildDate>
-    <atom:link href="https://unknownentity1806.page/freebies/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Mon, 01 Jan 0001 00:00:00 +0000</lastBuildDate>
+    <atom:link href="http://localhost:1313/freebies/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Buttons 88x31 px</title>
+      <link>http://localhost:1313/freebies/buttons/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/freebies/buttons/</guid>
+      <description>Decorate your own online space with these 88x31px buttons I made!</description>
+    </item>
+    <item>
+      <title>Coloring Pages</title>
+      <link>http://localhost:1313/freebies/coloringpages/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/freebies/coloringpages/</guid>
+      <description>These are coloring pages I made that you can use for free. I hope you enjoy them !</description>
+    </item>
+    <item>
+      <title>Layout Themes</title>
+      <link>http://localhost:1313/freebies/layout-themes/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/freebies/layout-themes/</guid>
+      <description>These are full layouts that I coded/made complete with graphics I designed that are free for you to use on your own website</description>
+    </item>
   </channel>
 </rss>

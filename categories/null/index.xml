@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Null on Unknown Entity 1806</title>
+    <link>http://localhost:1313/categories/null/</link>
+    <description>Recent content in Null on Unknown Entity 1806</description>
+    <generator>Hugo</generator>
+    <language>en-uk</language>
+    <lastBuildDate>Mon, 04 May 2026 16:22:05 +0200</lastBuildDate>
+    <atom:link href="http://localhost:1313/categories/null/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>May26</title>
+      <link>http://localhost:1313/posts/may26/</link>
+      <pubDate>Mon, 04 May 2026 16:22:05 +0200</pubDate>
+      <guid>http://localhost:1313/posts/may26/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Freebies</title>
+      <link>http://localhost:1313/freebies/</link>
+      <pubDate>Thu, 01 Jan 2026 08:30:00 -0700</pubDate>
+      <guid>http://localhost:1313/freebies/</guid>
+      <description>&lt;h2 id=&#34;heart_hands-free-stuff-yes-please&#34;&gt;&amp;#x1faf6; Free stuff? Yes please!&lt;/h2&gt;&#xA;&lt;p&gt;I love making my own designs, and I love sharing them. So this page features some things I made that you may use freely, as long as you give credit and do not use for commercial purposes nor claim as your own ~ &amp;#x1f47c;&lt;/p&gt;&#xA;&lt;h4 id=&#34;-please-note-that-works-may-be-signed-as-unknown-entity-1806-or-studio-louma&#34;&gt;~ Please note that works may be signed as Unknown Entity 1806 or Studio Louma&lt;/h4&gt;</description>
+    </item>
+    <item>
+      <title>Library</title>
+      <link>http://localhost:1313/library/</link>
+      <pubDate>Thu, 01 Jan 2026 08:30:00 -0700</pubDate>
+      <guid>http://localhost:1313/library/</guid>
+      <description>&lt;h2 id=&#34;purple_heart-lists-lists&#34;&gt;&amp;#x1f49c; Lists? Lists!&lt;/h2&gt;&#xA;&lt;p&gt;Welcome to the Library. I love making lists. And I keep them scattered everywhere. So this is my attempt to keep them all organized in one place.&#xA;I share them publicly because maybe you like to see them as well &amp;#x1f60a;&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Coloring Pages</title>
+      <link>http://localhost:1313/freebies/coloringpages/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/freebies/coloringpages/</guid>
+      <description>These are coloring pages I made that you can use for free. I hope you enjoy them !</description>
+    </item>
+    <item>
+      <title>Layout Themes</title>
+      <link>http://localhost:1313/freebies/layout-themes/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/freebies/layout-themes/</guid>
+      <description>These are full layouts that I coded/made complete with graphics I designed that are free for you to use on your own website</description>
+    </item>
+  </channel>
+</rss>

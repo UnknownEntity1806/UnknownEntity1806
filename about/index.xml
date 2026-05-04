@@ -6,28 +6,28 @@
     <description>Recent content in About on Unknown Entity 1806</description>
     <generator>Hugo</generator>
     <language>en-uk</language>
-    <lastBuildDate>Tue, 21 Apr 2026 15:06:30 +0200</lastBuildDate>
+    <lastBuildDate>Mon, 01 Jan 0001 00:00:00 +0000</lastBuildDate>
     <atom:link href="https://unknownentity1806.page/about/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Previous versions</title>
+      <link>https://unknownentity1806.page/about/prevversions/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://unknownentity1806.page/about/prevversions/</guid>
+      <description>a simple overview of past versions of this website</description>
+    </item>
+    <item>
+      <title>Unknown Entity 1806</title>
+      <link>https://unknownentity1806.page/about/unknown/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://unknownentity1806.page/about/unknown/</guid>
+      <description>learn about my persona/mascot</description>
+    </item>
     <item>
       <title>Webmaster</title>
       <link>https://unknownentity1806.page/about/webmaster/</link>
-      <pubDate>Sun, 19 Apr 2026 21:23:27 +0200</pubDate>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       <guid>https://unknownentity1806.page/about/webmaster/</guid>
-      <description>Get to know more about the webmaster, Malou. The person that maintains this website and the illustrator known as Unknown Entity 1806.</description>
-    </item>
-    <item>
-      <title>About unknown entity 1806</title>
-      <link>https://unknownentity1806.page/about/unknownentity1806/</link>
-      <pubDate>Sat, 18 Apr 2026 21:23:27 +0200</pubDate>
-      <guid>https://unknownentity1806.page/about/unknownentity1806/</guid>
-      <description>Get to know more about the original character and my online persona  Unknown Entity 1806</description>
-    </item>
-    <item>
-      <title>Versions</title>
-      <link>https://unknownentity1806.page/about/versions/</link>
-      <pubDate>Thu, 01 Jan 2026 15:00:26 +0200</pubDate>
-      <guid>https://unknownentity1806.page/about/versions/</guid>
-      <description>An overview of all the different versions this website has been through</description>
+      <description>learn a bit about the person that runs this website</description>
     </item>
   </channel>
 </rss>

@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Null on Unknown Entity 1806</title>
+    <link>http://localhost:1313/tags/null/</link>
+    <description>Recent content in Null on Unknown Entity 1806</description>
+    <generator>Hugo</generator>
+    <language>en-uk</language>
+    <lastBuildDate>Mon, 04 May 2026 16:22:05 +0200</lastBuildDate>
+    <atom:link href="http://localhost:1313/tags/null/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>May26</title>
+      <link>http://localhost:1313/posts/may26/</link>
+      <pubDate>Mon, 04 May 2026 16:22:05 +0200</pubDate>
+      <guid>http://localhost:1313/posts/may26/</guid>
+      <description></description>
+    </item>
+  </channel>
+</rss>
