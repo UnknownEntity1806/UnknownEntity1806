@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>List on Unknown Entity 1806</title>
+    <link>http://localhost:1313/categories/list/</link>
+    <description>Recent content in List on Unknown Entity 1806</description>
+    <generator>Hugo</generator>
+    <language>en-uk</language>
+    <lastBuildDate>Sat, 02 May 2026 08:30:00 -0700</lastBuildDate>
+    <atom:link href="http://localhost:1313/categories/list/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Webdevelopment bookmarks</title>
+      <link>http://localhost:1313/library/list1/</link>
+      <pubDate>Mon, 29 Dec 2025 08:30:00 -0700</pubDate>
+      <guid>http://localhost:1313/library/list1/</guid>
+      <description>Master list of resources and bookmarks related to webdevelopment</description>
+    </item>
+  </channel>
+</rss>

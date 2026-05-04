@@ -1,60 +1,47 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>The Library on Unknown Entity 1806</title>
+    <title>Blog on Unknown Entity 1806</title>
     <link>https://unknownentity1806.page/posts/</link>
-    <description>Recent content in The Library on Unknown Entity 1806</description>
+    <description>Recent content in Blog on Unknown Entity 1806</description>
     <generator>Hugo</generator>
     <language>en-uk</language>
+    <lastBuildDate>Tue, 21 Apr 2026 15:41:20 +0200</lastBuildDate>
     <atom:link href="https://unknownentity1806.page/posts/index.xml" rel="self" type="application/rss+xml" />
     <item>
-      <title>Update for April 2026</title>
-      <link>https://unknownentity1806.page/posts/april26/</link>
-      <pubDate>Tue, 21 Apr 2026 14:43:02 +0200</pubDate>
-      <guid>https://unknownentity1806.page/posts/april26/</guid>
-      <description>Sharing what has been going on these past few weeks.</description>
+      <title>Updates for April 2026</title>
+      <link>https://unknownentity1806.page/posts/apr26/</link>
+      <pubDate>Tue, 21 Apr 2026 15:41:20 +0200</pubDate>
+      <guid>https://unknownentity1806.page/posts/apr26/</guid>
+      <description>Hello everyone! I am back with another monthly update and it is really crazy much fast time has passed, but also, how much has happened in the meantime!</description>
     </item>
     <item>
-      <title>Youtube</title>
-      <link>https://unknownentity1806.page/posts/youtube/</link>
-      <pubDate>Sat, 18 Apr 2026 17:52:42 +0200</pubDate>
-      <guid>https://unknownentity1806.page/posts/youtube/</guid>
-      <description>A list with my go-to Youtube channels</description>
+      <title>Updates for March 2026</title>
+      <link>https://unknownentity1806.page/posts/mar26/</link>
+      <pubDate>Sat, 14 Mar 2026 15:41:20 +0200</pubDate>
+      <guid>https://unknownentity1806.page/posts/mar26/</guid>
+      <description>Another month, another update on what has been going on in my life.</description>
     </item>
     <item>
-      <title>WIPs March 2026</title>
-      <link>https://unknownentity1806.page/posts/wipmarch26/</link>
-      <pubDate>Sat, 14 Mar 2026 14:59:01 +0200</pubDate>
-      <guid>https://unknownentity1806.page/posts/wipmarch26/</guid>
-      <description>An update about the current Works in Progress</description>
+      <title>Updates for February 2026</title>
+      <link>https://unknownentity1806.page/posts/feb26/</link>
+      <pubDate>Tue, 03 Feb 2026 15:41:20 +0200</pubDate>
+      <guid>https://unknownentity1806.page/posts/feb26/</guid>
+      <description>Another month, another update on what is going on behind the scenes.</description>
     </item>
     <item>
-      <title>WIPs Feb 2026</title>
-      <link>https://unknownentity1806.page/posts/wipfeb26/</link>
-      <pubDate>Tue, 03 Feb 2026 14:50:06 +0200</pubDate>
-      <guid>https://unknownentity1806.page/posts/wipfeb26/</guid>
-      <description>An update post about the Works In Progress in February 2026</description>
+      <title>Updates for January 2026</title>
+      <link>https://unknownentity1806.page/posts/jan26/</link>
+      <pubDate>Sun, 11 Jan 2026 15:41:20 +0200</pubDate>
+      <guid>https://unknownentity1806.page/posts/jan26/</guid>
+      <description>A little bit of my works in progress in January. Some might be finished this month. Others are more ideas that are for further in the future.</description>
     </item>
     <item>
-      <title>WIPs Jan 2026</title>
-      <link>https://unknownentity1806.page/posts/wipjan26/</link>
-      <pubDate>Sun, 11 Jan 2026 19:32:17 +0200</pubDate>
-      <guid>https://unknownentity1806.page/posts/wipjan26/</guid>
-      <description>An update post about the Works In Progress in January 2026</description>
-    </item>
-    <item>
-      <title>Draw &amp; Chat 01</title>
-      <link>https://unknownentity1806.page/posts/draw-chat-01/</link>
-      <pubDate>Thu, 01 Jan 2026 18:55:16 +0200</pubDate>
-      <guid>https://unknownentity1806.page/posts/draw-chat-01/</guid>
-      <description>Process video of drawing chibi Chloe &amp;amp; chatting about New Year resolutions</description>
-    </item>
-    <item>
-      <title>Indieweb</title>
-      <link>https://unknownentity1806.page/posts/indieweb/</link>
-      <pubDate>Fri, 24 Jan 2025 16:56:52 +0200</pubDate>
-      <guid>https://unknownentity1806.page/posts/indieweb/</guid>
-      <description>My masterlist of resources and bookmarks about the indieweb.</description>
+      <title>Draw &amp; Chat 01: New Year Resolutions</title>
+      <link>https://unknownentity1806.page/posts/drawnchat01/</link>
+      <pubDate>Thu, 01 Jan 2026 15:41:20 +0200</pubDate>
+      <guid>https://unknownentity1806.page/posts/drawnchat01/</guid>
+      <description>In this first Draw &amp;amp; Chat I chat a little bit about my New Year Resolutions (or intentions) and show you the process of me drawing a chibi version of my original character Chloe.</description>
     </item>
   </channel>
 </rss>
